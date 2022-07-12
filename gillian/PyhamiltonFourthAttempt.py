@@ -185,9 +185,10 @@ soloSoft.shuckTip()
 
 soloSoft.savePipeline()
 
-#TIPS: uses 1 tips (6 total at this point)
+#TIPS: uses 1 tips (7 total at this point)
 
 #C4#
+#CALL TWICE
 soloSoft = SoloSoft(
     filename = "dilution_C_M9_4.hso",
     plateList = plate_list,
@@ -195,7 +196,7 @@ soloSoft = SoloSoft(
 
 soloSoft.getTip(position=tips, num_tips=1)
 
-for j in range(1,7):
+for j in range(1,4):
     for row in rows[1::2]:
         for i in range(5,7):
             transfer_volume = 175
@@ -218,7 +219,8 @@ soloSoft.shuckTip()
 
 soloSoft.savePipeline()
 
-#TIPS: uses 1 tips (7 total at this point)
+#TIPS: uses 1 tips (i column and 1 tip in next column used at this point because called twice)
+
 
 '''Nitrogen columns
 column 7 should have no media
@@ -1178,7 +1180,7 @@ softLinx.plateCraneRemoveLid(["SoftLinx.Solo.Position4"],["SoftLinx.PlateCrane.L
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
 
 list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9_1.hso", 
-                    "dilution_C_M9_2.hso", "dilution_C_M9_3.hso", "dilution_C_M9_4.hso", "dilution_N_M9_1.hso", 
+                    "dilution_C_M9_2.hso", "dilution_C_M9_3.hso", "dilution_C_M9_4.hso", "dilution_C_M9_4.hso", "dilution_N_M9_1.hso", 
                     "dilution_N_M9_2.hso", "dilution_P_treatment_1.hso", "dilution_P_treatment_2.hso", 
                     "dilution_C_treatment_1.hso", "dilution_C_treatment_2.hso", 
                     "dilution_C_treatment_3.hso", "dilution_C_treatment_3.hso", 
