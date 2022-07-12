@@ -244,7 +244,7 @@ for j in range(1,5):
         position = stock_M9,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(8, transfer_volume),
         aspirate_shift = [0, 0, 2],
-        #  #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
         )
     soloSoft.dispense(
@@ -262,7 +262,7 @@ for j in range(1,6):
         position = stock_M9,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(9, transfer_volume),
         aspirate_shift = [0, 0, 2],
-        #  #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
         )
     soloSoft.dispense(
@@ -293,7 +293,7 @@ for j in range(1,7):
         position = stock_M9,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(10, transfer_volume),
         aspirate_shift = [0, 0, 2],
-        #  #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
         )
     soloSoft.dispense(
@@ -311,7 +311,7 @@ for j in range(1,10):
         position = stock_M9,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(11, transfer_volume),
         aspirate_shift = [0, 0, 2],
-        #  #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
         )
     soloSoft.dispense(
@@ -351,7 +351,7 @@ for i in range(1,3):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
         )    
     soloSoft.dispense(
@@ -373,7 +373,7 @@ for j in range(1,3):
             mix_at_start = True,
             mix_cycles = mixCycles,
             mix_volume = mixVolume,
-            #aspirate_height = aspirateHeight,
+            dispense_height = dispenseHeight,
             syringe_speed = syringeSpeed,        
             )    
         soloSoft.dispense(
@@ -395,7 +395,7 @@ for j in range(1,5):
             mix_at_start = True,
             mix_cycles = mixCycles,
             mix_volume = mixVolume,
-            #aspirate_height = aspirateHeight,
+            dispense_height = dispenseHeight,
             syringe_speed = syringeSpeed,        
             )    
         soloSoft.dispense(
@@ -431,7 +431,7 @@ for j in range(1,9):
             mix_at_start = True,
             mix_cycles = mixCycles,
             mix_volume = mixVolume,
-            #aspirate_height = aspirateHeight,
+            dispense_height = dispenseHeight,
             syringe_speed = syringeSpeed,        
             )    
         soloSoft.dispense(
@@ -467,7 +467,7 @@ for row in rows[1::2]:
             mix_at_start = True,
             mix_cycles = mixCycles,
             mix_volume = mixVolume,
-            #aspirate_height = aspirateHeight,
+            dispense_height = dispenseHeight,
             syringe_speed = syringeSpeed,        
             )    
         soloSoft.dispense(
@@ -490,7 +490,7 @@ for j in range(1,3):
                 mix_at_start = True,
                 mix_cycles = mixCycles,
                 mix_volume = mixVolume,
-                #aspirate_height = aspirateHeight,
+                dispense_height = dispenseHeight,
                 syringe_speed = syringeSpeed,        
                 )    
             soloSoft.dispense(
@@ -526,7 +526,7 @@ for j in range(1,5):
                 mix_at_start = True,
                 mix_cycles = mixCycles,
                 mix_volume = mixVolume,
-                #aspirate_height = aspirateHeight,
+                dispense_height = dispenseHeight,
                 syringe_speed = syringeSpeed,        
                 )    
             soloSoft.dispense(
@@ -563,7 +563,7 @@ for j in range(1,5):
                 mix_at_start = True,
                 mix_cycles = mixCycles,
                 mix_volume = mixVolume,
-             #   #aspirate_height = aspirateHeight,
+                dispense_height = dispenseHeight,
                 syringe_speed = syringeSpeed,        
                 )    
             soloSoft.dispense(
@@ -601,7 +601,7 @@ soloSoft.aspirate(
     mix_at_start = True,
     mix_cycles = mixCycles,
     mix_volume = mixVolume,
-    #aspirate_height = aspirateHeight,
+    dispense_height = dispenseHeight,
     syringe_speed = syringeSpeed,
     ) 
 
@@ -622,7 +622,7 @@ soloSoft.aspirate(
     mix_at_start = True,
     mix_cycles = mixCycles,
     mix_volume = mixVolume,
-   # aspirate_height = aspirateHeight,
+   dispense_height = dispenseHeight,
     syringe_speed = syringeSpeed,        
     )
 
@@ -643,7 +643,7 @@ for j in range(1,3):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
         )
     soloSoft.dispense(
@@ -677,7 +677,7 @@ for j in range(1,5):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-       # aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
         )
     soloSoft.dispense(
@@ -711,7 +711,7 @@ for j in range(1,9):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-      #  aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
         )
     soloSoft.dispense(
@@ -752,7 +752,7 @@ for i in range(1,6):
         position = stock_M9,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(12, 180),
         aspirate_shift = [0, 0, 2],
-        ##aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         )
     soloSoft.dispense(
@@ -777,7 +777,7 @@ soloSoft.aspirate(
     mix_at_start = True,
     mix_cycles = mixCycles,
     mix_volume = mixVolume,
-    ##aspirate_height = aspirateHeight,
+    dispense_height = dispenseHeight,
     syringe_speed = syringeSpeed,
     )
 soloSoft.dispense(
@@ -802,7 +802,7 @@ soloSoft.aspirate(
     mix_at_start = True,
     mix_cycles = mixCycles,
     mix_volume = mixVolume,
-    #aspirate_height = aspirateHeight,
+    dispense_height = dispenseHeight,
     syringe_speed = syringeSpeed,
     )
 soloSoft.dispense(
@@ -827,7 +827,7 @@ soloSoft.aspirate(
     mix_at_start = True,
     mix_cycles = mixCycles,
     mix_volume = mixVolume,
-    #aspirate_height = aspirateHeight,
+    dispense_height = dispenseHeight,
     syringe_speed = syringeSpeed,
     )
 soloSoft.dispense(
@@ -864,7 +864,7 @@ for i in range(1,6):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        ##aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         )
     soloSoft.dispense(
@@ -896,7 +896,7 @@ for i in range(7,12):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        ##aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         )
     soloSoft.dispense(
@@ -929,7 +929,7 @@ for j in range(1,3):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         )
     for i in [6,12]:
@@ -973,7 +973,7 @@ for i in range(1,3):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         ) 
     for i in range(1,6):
@@ -984,7 +984,7 @@ for i in range(1,3):
             mix_at_finish = True,
             mix_cycles = mixCycles,
             mix_volume = mixVolume,
-            #dispense_height = dispenseHeight,
+            aspirate_height = aspirateHeight,
             syringe_speed = syringeSpeed,
             )
 
@@ -996,7 +996,7 @@ for i in range(1,3):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         ) 
     for i in range(7,12):
@@ -1007,7 +1007,7 @@ for i in range(1,3):
             mix_at_finish = True,
             mix_cycles = mixCycles,
             mix_volume = mixVolume,
-            #dispense_height = dispenseHeight,
+            aspirate_height = aspirateHeight,
             syringe_speed = syringeSpeed,
             )
 
@@ -1035,7 +1035,7 @@ for i in range(1,3):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         ) 
     for i in reversed(range(1,6)):
@@ -1046,7 +1046,7 @@ for i in range(1,3):
             mix_at_finish = True,
             mix_cycles = mixCycles,
             mix_volume = mixVolume,
-            #dispense_height = dispenseHeight,
+            aspirate_height = aspirateHeight,
             syringe_speed = syringeSpeed,
             )
 
@@ -1074,7 +1074,7 @@ for i in range(1,3):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         ) 
     for i in reversed(range(7,12)):
@@ -1085,7 +1085,7 @@ for i in range(1,3):
             mix_at_finish = True,
             mix_cycles = mixCycles,
             mix_volume = mixVolume,
-            #dispense_height = dispenseHeight,
+            aspirate_height = aspirateHeight,
             syringe_speed = syringeSpeed,
             )
 
@@ -1113,7 +1113,7 @@ for i in reversed(range(1,6)):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         ) 
     soloSoft.dispense(
@@ -1123,7 +1123,7 @@ for i in reversed(range(1,6)):
         mix_at_finish = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #dispense_height = dispenseHeight,
+        aspirate_height = aspirateHeight,
         syringe_speed = syringeSpeed,
         )
     soloSoft.shuckTip()
@@ -1149,7 +1149,7 @@ for i in reversed(range(7,12)):
         mix_at_start = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #aspirate_height = aspirateHeight,
+        dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
         ) 
     soloSoft.dispense(
@@ -1159,7 +1159,7 @@ for i in reversed(range(7,12)):
         mix_at_finish = True,
         mix_cycles = mixCycles,
         mix_volume = mixVolume,
-        #dispense_height = dispenseHeight,
+        aspirate_height = aspirateHeight,
         syringe_speed = syringeSpeed,
         )
     soloSoft.shuckTip()
