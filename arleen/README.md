@@ -22,15 +22,37 @@ For this project, we will reproduce one of the biological experiments presented 
 ### 6/30/22 
 * I attended the a meeting about the basics of DNA assembly and how one might write code to execute this workflow on the Opentrons OT-2s. 
 * We finished the code for the dilution plate with the updated concentrations for each nutrient and media. 
-* We made final changes to the code and made sure we had everything mapped out for the assay plate. 
+* We made final changes to the code and made sure we had everything mapped out for the assay plate.
 * I attended my student connects meeting.
 
 ### 7/01/22
-* Halona, Gillina and I met to create our slides for the third summer student meeting. 
+* Halona, Gillian and I met to create our slides for the third summer student meeting. 
 * I attended the summer students meeting and presented the progress we have made with the project, our challenges and our next steps. 
 * I attended the journal club and was the scribbe (took notes of the presentation). 
-* yo
-hkh
+
+### 7/05/22
+* Worked remotely reading the article for my journal club presentation, wrote some of the steps down for Pryianka's project and made sure our code was not missing anything. 
+
+### 7/06/22 
+* Took a se minar on how to prepare our posters 
+* Met with Casey to review our code
+* Went to the Biology Building and tested the hso files and fixed a few mistakes we had. 
+* Found out that the pippetes only hold a max volume of 180 which was less than we thought so we had to do more loops to get the correct volume on each well. 
+
+### 7/07/22 
+* Worked on my journal club presentation
+* Met with Carla to discuss the paper for my journal club presentation 
+* Worked on fixing the code for the dilution plate (getting the correct volume and doing the correct amount of loops for each step in orther to get the desired final volume for every well). 
+
+### 7/08/22 
+* Worked on our update presentation for the RPL update meeting and the attended the meeting. 
+* Practiced our presentation for journal club and then gave our presentation in the afternoon. 
+
+### 7/11/22 
+* Worked with when to refil the tip box during the protocol and wrote the code for it. 
+* had a mandatory mid-point meeting with Robert Schuch to talk about my experience during the intership, my project, etc. 
+* Tested the hso files on the Hudson and fixed some mistakes we had in the code. 
+
 
 
 
