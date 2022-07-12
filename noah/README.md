@@ -32,3 +32,12 @@ Tasks may include compiling data for operational reporting and stakeholder manag
 
 ## 07/08
 * I continued working on my personal website.
+
+## 07/11
+* I continued working on my personal website.
+
+## 07/12
+* I continued learning about ROS2.
+* I went to the OT-2 webpage to learn more about the machine and how it works.
+* I continued working on my personal webpage
+* I learned a little more about the OT-2 Python API
