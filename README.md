@@ -18,9 +18,9 @@ During the summer we will have a series of meetings
 
 ### Recordings
 
-Please find some of the tutorials recorded at [recordings](https://github.com/AD-SDL/rpl-summer-2022/tree/main/recordings)
+Please find some of the tutorials recorded at our box folder.
 
-* Github with Alex Brace ([link](https://github.com/AD-SDL/rpl-summer-2022/tree/main/recordings/07_07_Alex_Brace_Github.mp4))
+* Github with Alex Brace ([link](https://anl.app.box.com/file/981389888412))
 * VR with Rory (tbd)
 
 ## Github
