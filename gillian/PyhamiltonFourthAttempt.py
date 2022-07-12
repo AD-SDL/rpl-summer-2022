@@ -132,7 +132,37 @@ soloSoft = SoloSoft(
 
 soloSoft.getTip(position=tips, num_tips=1)
 
-for j in range(1,6):
+for j in range(1,4):
+    for row in rows[::2]:
+        for i in range(5,7):
+            transfer_volume = 180
+            soloSoft.aspirate(
+                position = stock_M9,    
+                aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setCell(row, i, transfer_volume),
+                aspirate_shift = [0, 0, 2],
+                #aspirate_height = aspirateHeight,
+                syringe_speed = syringeSpeed,        
+                )    
+            soloSoft.dispense(
+                position = dilution,
+                dispense_volumes = Plate_96_Corning_3635_ClearUVAssay().setCell(row, i, transfer_volume),
+                dispense_shift = [0, 0, 2],
+                ##dispense_height = dispenseHeight,
+                syringe_speed = syringeSpeed,
+                )
+
+soloSoft.shuckTip()
+
+soloSoft.savePipeline()
+
+soloSoft = SoloSoft(
+    filename = "dilution_C_M9_3.hso",
+    plateList = plate_list,
+    ) 
+
+soloSoft.getTip(position=tips, num_tips=1)
+
+for j in range(1,3):
     for row in rows[::2]:
         for i in range(5,7):
             transfer_volume = 180
@@ -159,7 +189,7 @@ soloSoft.savePipeline()
 
 #C4#
 soloSoft = SoloSoft(
-    filename = "dilution_C_M9_3.hso",
+    filename = "dilution_C_M9_4.hso",
     plateList = plate_list,
     ) 
 
@@ -1148,7 +1178,7 @@ softLinx.plateCraneRemoveLid(["SoftLinx.Solo.Position4"],["SoftLinx.PlateCrane.L
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
 
 list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9_1.hso", 
-                    "dilution_C_M9_2.hso", "dilution_C_M9_3.hso", "dilution_N_M9_1.hso", 
+                    "dilution_C_M9_2.hso", "dilution_C_M9_3.hso", "dilution_C_M9_4.hso", "dilution_N_M9_1.hso", 
                     "dilution_N_M9_2.hso", "dilution_P_treatment_1.hso", "dilution_P_treatment_2.hso", 
                     "dilution_C_treatment_1.hso", "dilution_C_treatment_2.hso", 
                     "dilution_C_treatment_3.hso", "dilution_C_treatment_3.hso", 

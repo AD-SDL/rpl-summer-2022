@@ -2,9 +2,9 @@ DeepBlock.96.VWR-75870-792.sterile
 Empty
 TipBox.180uL.Axygen-EVF-180-R-S.bluebox
 Plate.96.Corning-3635.ClearUVAssay
-Empty
 DeepBlock.96.VWR-75870-792.sterile
-Plate.96.Corning-3635.ClearUVAssay
+DeepBlock.96.VWR-75870-792.sterile
+DeepBlock.96.VWR-75870-792.sterile
 Empty
 GetTip
 Position3
@@ -15,7 +15,7 @@ TipDisposal
 False
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
@@ -105,7 +105,7 @@ a
 0
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
@@ -195,7 +195,7 @@ a
 0
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
@@ -285,7 +285,7 @@ a
 0
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
@@ -375,7 +375,7 @@ a
 0
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
@@ -465,7 +465,7 @@ a
 0
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
@@ -555,7 +555,7 @@ a
 0
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
@@ -645,7 +645,7 @@ a
 0
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
@@ -735,7 +735,7 @@ a
 0
 !@#$
 Aspirate
-Position1
+Position5
 0
 2
 50
