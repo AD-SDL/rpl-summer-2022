@@ -81,4 +81,4 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 ### 7/13
 * I finished the protocol I was writing for Priyanka's third paper
 * I attended a seminar about the deliverables required by my internship
-* 
+*
