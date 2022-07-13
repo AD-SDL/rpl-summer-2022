@@ -81,4 +81,5 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 ### 7/13
 * I finished the protocol I was writing for Priyanka's third paper
 * I attended a seminar about the deliverables required by my internship
-*
+* I attended a talk about using cardiac muscle cells to form an oscillator and to use it in computing
+* I attended a student connects meeting where we talked about the progress of our respective projects
