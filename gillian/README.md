@@ -79,7 +79,8 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I wrote protocols for a second paper for Priyanka and started working on a third
 
 ### 7/13
-* I finished the protocol I was writing for Priyanka's third paper
+* I finished the protocols I was writing for Priyanka's third and fourth papers
 * I attended a seminar about the deliverables required by my internship
 * I attended a talk about using cardiac muscle cells to form an oscillator and to use it in computing
 * I attended a student connects meeting where we talked about the progress of our respective projects
+* I fixed the pyhamilton protocol to make sure that none of the wells would be aspirated too many times so that they would be empty
