@@ -305,11 +305,28 @@ for j in range(1,7):
         )
 
 #N5#
-for j in range(1,10):
+for j in range(1,5):
     transfer_volume = 125
     soloSoft.aspirate(
         position = stock_M9,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(11, transfer_volume),
+        aspirate_shift = [0, 0, 2],
+        dispense_height = dispenseHeight,
+        syringe_speed = syringeSpeed,        
+        )
+    soloSoft.dispense(
+        position = dilution,
+        dispense_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(11, transfer_volume),
+        dispense_shift = [0, 0, 2],
+        #  #dispense_height = dispenseHeight,
+        syringe_speed = syringeSpeed,
+        )
+
+for j in range(1,6):
+    transfer_volume = 125
+    soloSoft.aspirate(
+        position = stock_M9,
+        aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(12, transfer_volume),
         aspirate_shift = [0, 0, 2],
         dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,        
@@ -521,7 +538,7 @@ for j in range(1,5):
             transfer_volume = 150
             soloSoft.aspirate(
                 position = stock_treatments,    
-                aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setCell(row, i-1, transfer_volume),
+                aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setCell(row, i-2, transfer_volume),
                 aspirate_shift = [0, 0, 2],
                 mix_at_start = True,
                 mix_cycles = mixCycles,
@@ -578,7 +595,41 @@ soloSoft.shuckTip()
 
 soloSoft.savePipeline()
 
-#TIPS: uses 1 tip (3 columns and 8 of fourth column used at this point because run twice)
+soloSoft = SoloSoft(
+    filename = "dilution_C_treatment_4.hso",
+    plateList = plate_list,
+    )
+
+soloSoft.getTip(position=tips, num_tips=1)
+
+#prepping C1 cells (10X)
+for j in range(1,5):
+    for row in rows[::2]:
+        for i in range(3,5):
+            transfer_volume = 150
+            soloSoft.aspirate(
+                position = stock_treatments,    
+                aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setCell(rows[row+1], i, transfer_volume),
+                aspirate_shift = [0, 0, 2],
+                mix_at_start = True,
+                mix_cycles = mixCycles,
+                mix_volume = mixVolume,
+                dispense_height = dispenseHeight,
+                syringe_speed = syringeSpeed,        
+                )    
+            soloSoft.dispense(
+                position = dilution,
+                dispense_volumes = Plate_96_Corning_3635_ClearUVAssay().setCell(row, i, transfer_volume),
+                dispense_shift = [0, 0, 2],
+            #    #dispense_height = dispenseHeight,
+                syringe_speed = syringeSpeed,
+                )
+
+soloSoft.shuckTip()
+
+soloSoft.savePipeline()
+
+#TIPS: uses 1 tip (3 columns and 8 of fourth column used at this point)
 
 
 #Nitrogen
@@ -1183,7 +1234,7 @@ list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9
                     "dilution_C_M9_2.hso", "dilution_C_M9_3.hso", "dilution_C_M9_4.hso", "dilution_C_M9_4.hso", "dilution_N_M9_1.hso", 
                     "dilution_N_M9_2.hso", "dilution_P_treatment_1.hso", "dilution_P_treatment_2.hso", 
                     "dilution_C_treatment_1.hso", "dilution_C_treatment_2.hso", 
-                    "dilution_C_treatment_3.hso", "dilution_C_treatment_3.hso", 
+                    "dilution_C_treatment_3.hso", "dilution_C_treatment_4.hso", 
                     "dilution_N_treatment_1.hso", "dilution_N_treatment_2.hso", 
                     "dilution_N_treatment_3.hso"]
 
