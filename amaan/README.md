@@ -74,6 +74,15 @@ In the secure biosystems lab, there are many robots that are in play. It is very
 * Gave a live demo of my dashboard app working with the publisher + subscriber + socket-server to Rory and Dr. Ramanathan.
 * Rory and I discussed next steps to do.
 * **TODO**    
-  - [ ] Clean up code, comment/document code, rename files/packages to be better, remove unncessary files, and commit + push everything to your forked repo.    
-  - [ ] Create pull request w/ your forked repo   
+  - [x] Clean up code, comment/document code, rename files/packages to be better, remove unncessary files, and commit + push everything to your forked repo.    
+  - [x] Create pull request w/ your forked repo   
   - [ ] NEW Feature: Create a way for the dashboard to have a button that when you click, it sends a message to a ROS topic (e.g., "log_topic"), and then create a subscriber on the NUC that subscribes to that ros topic and prints out the messages whenever it receives it.   
+
+### Tuesday, 7.12.22
+* Worked on personal website
+* Worked on cleaning up code and documenting it
+
+### Wednesday 7.13.22
+* Had the student internship meeting in morning at 9
+* Renamed ros workspace, packages, and files to be more relevant. Cleaned up github repo to only have relevant files. And then made pull request to merge my code with the `AD-SDL/rpl-camera-vision` repo. Rory then merged the pull request
+* Created a button with textbox in the dashboard app for users to write text and when they click the submit button, it sends the message over a socket to the ROS topic. Currently working on the socket and subscriber code for that.
