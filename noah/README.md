@@ -39,5 +39,9 @@ Tasks may include compiling data for operational reporting and stakeholder manag
 ## 07/12
 * I continued learning about ROS2.
 * I went to the OT-2 webpage to learn more about the machine and how it works.
-* I continued working on my personal webpage
-* I learned a little more about the OT-2 Python API
+* I continued working on my personal webpage.
+* I learned a little more about the OT-2 Python API.
+
+## 07/14
+* I started taking inventory of all the equipment in the RPL.
+* I continued working on my final poster presentation.
