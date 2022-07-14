@@ -3,7 +3,7 @@
 **Project name:** Self-Driving Labs
 **Advisor:** Arvind Ramanathan 
 **Email:** sohammshukla@gmail.com
-**Resume** [Resume](https://github.com/AD-SDL/rpl-summer-2022/blob/main/soham/MagicalCV.pdf)
+**Resume:** [Here](https://github.com/AD-SDL/rpl-summer-2022/blob/main/soham/MagicalCV.pdf)
 
 # diary:
 ## **Week of 6/27 - 7/1**
