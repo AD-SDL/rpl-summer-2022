@@ -2,4 +2,5 @@
 ### Contents:
 * Daily Log
 * Choosing a pretrained model
+* Pre-processing
 * PyHamilton Third Attempt (code)
