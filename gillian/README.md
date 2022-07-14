@@ -84,3 +84,6 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I attended a talk about using cardiac muscle cells to form an oscillator and to use it in computing
 * I attended a student connects meeting where we talked about the progress of our respective projects
 * I fixed the pyhamilton protocol to make sure that none of the wells would be aspirated too many times so that they would be empty
+
+### 7/14
+* 
