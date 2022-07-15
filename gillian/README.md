@@ -86,4 +86,13 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I fixed the pyhamilton protocol to make sure that none of the wells would be aspirated too many times so that they would be empty
 
 ### 7/14
+* I wrote a protocol for a fifth paper for Priyanka and will complete it on 7/15
+* I attended a talk from the materials science division about lithiation in newly developed cathodes
+* I started working on my poster for Learning on the Lawn. I just about completed the motivations and future directions sections but I am waiting for a full test of our protocol on 7/15 to write much more in the progress section. I intend to have a draft completed by 7/18 so that I can meet with Arvind and others for feedback
+* I attended a Learn Something New meeting where Rory talked about computer vision, graphics, and some python skills
+
+### 7/15
+* I met with Halona and Arleen to make our presentation for the weekly update meeting
+* I finished the protocol I was writing for Priyanka and uploaded all of my finished papers and procedures to the XDL Box folder we are using
+* I started working on the 150 word abstract for the poster presentation which I would also like to have a complete draft for by the start of next week so that I can meet with Bob to get feedback
 * 
