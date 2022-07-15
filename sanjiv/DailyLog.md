@@ -64,7 +64,7 @@ Creating a fully autonomous lab with robots used for biology experiments.
 * Set up a ROS talker and listener
 * Found out that a secure network is needed or else talker is sending information to entire Argonne Auth network
 
-<h2> 7/14 <h2>
-* Created a plan for ROS integration
+<h2> 7/14 </h2>
+* Created a plan for ROS integration <br>
 * Updated readme to include example outputs for the commands
 
