@@ -93,7 +93,7 @@ In the secure biosystems lab, there are many robots that are in play. It is very
   * Ran into a design issue. I didn't know if I should 
     1. have the dashboard establish a new socket connection for the button message sending since there is already a socket connection for the camera frames. 
     2. OR if I should have the dashboard just connect to one socket, and then instead of having a cam_subscriber.py and msg_subscriber.py, I would have just one file called client.py that when it receives messages on the socket it forwards it to the correct thread (one thread handles the CamSubscriber node and another thread handles the MessageSubscriber node). 
-  * Talked with Rory about this and for now we decided to keep it simple and simply create a new socket connection (option 1), even though it's scalable. This is because in the future we want to get rid of the socket connection and have the dashboard tightly integrated with ROS, so we won't have this problem. And dealing with threads makes it unnecessarily more complicated.
+  * Talked with Rory about this and for now we decided to keep it simple and simply create a new socket connection (option a), even though it's scalable. This is because in the future we want to get rid of the socket connection and have the dashboard tightly integrated with ROS, so we won't have this problem. And dealing with threads makes it unnecessarily more complicated.
 * Began coding out what Rory and I decided above
 
 ### Friday, 7.15.22
