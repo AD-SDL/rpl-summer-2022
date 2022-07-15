@@ -3,6 +3,7 @@
 **Project name:** Self-Driving Labs
 **Advisor:** Arvind Ramanathan 
 **Email:** sohammshukla@gmail.com
+**Resume:** [Here](https://github.com/AD-SDL/rpl-summer-2022/blob/main/soham/MagicalCV.pdf)
 
 # diary:
 ## **Week of 6/27 - 7/1**
@@ -19,3 +20,5 @@
 ## **Week of 7/11 - 7/15** 
 
 ### Monday (7/11): Continuing StableBaselines3 practice activties to familiarize myself with how to write AI
+### Wednesday (7/13): Finished CartPole AI, added scoring mechanism, still lots of bugs and issues
+### Thursday (7/14): Wrote OpenLeaf Resume, kinda small though ;)

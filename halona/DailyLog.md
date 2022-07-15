@@ -89,5 +89,20 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Work on code
 ### Tasks Accomplished:
 * We worked on the volumes of the deep well
+## 7/13
+### To Do:
+* Work on pre-processing
+* Work on Priyanka's papers
+### Tasks Accomplished:
+* Worked on understanding yolov5 and played around with its github
+* Worked on Priyanka's papers
+## 7/14
+### To Do:
+* Work out how to pre-process the images (make a python script for the labels)
+* Work on Priyanka's papers
+### Tasks Accomplished:
+* Was able to find code that converts the Unity json files to YOLO-readable files
+* Worked on creating a yaml file for the Unity images
+* Worked on Priyanka's paper
 
 

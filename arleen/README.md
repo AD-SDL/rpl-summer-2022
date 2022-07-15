@@ -50,9 +50,16 @@ For this project, we will reproduce one of the biological experiments presented 
 
 ### 7/11/22 
 * Worked with when to refil the tip box during the protocol and wrote the code for it. 
-* had a mandatory mid-point meeting with Robert Schuch to talk about my experience during the intership, my project, etc. 
+* Had a mandatory mid-point meeting with Robert Schuch to talk about my experience during the intership, my project, etc. 
 * Tested the hso files on the Hudson and fixed some mistakes we had in the code. 
 
+### 7/12/22
+* Worked on writting the steps down for some of the papers I found for Pryianka's project. 
+* Made a few changes to the code and fixed some mistakes we had left. 
+
+### 7/13/22 
+* Worked on writting the steps down for some of the other papers I found for Pryianka's project. 
+* Attended a mandatory Seminar about our research project presentations and all the deliverables. 
 
 
 

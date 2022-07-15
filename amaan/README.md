@@ -86,3 +86,17 @@ In the secure biosystems lab, there are many robots that are in play. It is very
 * Had the student internship meeting in morning at 9
 * Renamed ros workspace, packages, and files to be more relevant. Cleaned up github repo to only have relevant files. And then made pull request to merge my code with the `AD-SDL/rpl-camera-vision` repo. Rory then merged the pull request
 * Created a button with textbox in the dashboard app for users to write text and when they click the submit button, it sends the message over a socket to the ROS topic. Currently working on the socket and subscriber code for that.
+
+### Thursday, 7.14.22
+* Had meeting in morning with Dr. Boomsma where he talked about the poster that's due next Thursday. Began work on the poster
+* Worked on the code for the dashboard to send data to a ROS topic on the NUC. Spent some time architecting how it should work.
+  * Ran into a design issue. I didn't know if I should 
+    1. have the dashboard establish a new socket connection for the button message sending since there is already a socket connection for the camera frames. 
+    2. OR if I should have the dashboard just connect to one socket, and then instead of having a cam_subscriber.py and msg_subscriber.py, I would have just one file called client.py that when it receives messages on the socket it forwards it to the correct thread (one thread handles the CamSubscriber node and another thread handles the MessageSubscriber node). 
+  * Talked with Rory about this and for now we decided to keep it simple and simply create a new socket connection (option a), even though it's scalable. This is because in the future we want to get rid of the socket connection and have the dashboard tightly integrated with ROS, so we won't have this problem. And dealing with threads makes it unnecessarily more complicated.
+* Began coding out what Rory and I decided above
+
+### Friday, 7.15.22
+* 11am Weekly RPL Meeting
+* 2pm Journal Club
+* Worked on the code from yesterday

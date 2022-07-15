@@ -22,3 +22,7 @@ https://github.com/yancie-yjr/StreamYOLO
 RCNN takes a huge amount of time and cannot be implemented in real time. Also, the search algorithm is fixed so there’s no learning there. 
 
 https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e 
+
+## Final pre-trained model:
+Yolov5 was chosen because it is the newest version of the Yolo. We ended up choosing Yolov5m (m stansds for medium). Future scope: can test how much slower Yolov5l and Yolov5xl is. 
+https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data
