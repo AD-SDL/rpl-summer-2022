@@ -802,7 +802,7 @@ soloSoft.getTip(tips)
 for i in range(1,6):
     soloSoft.aspirate(
         position = stock_M9,
-        aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(12, 180),
+        aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(7, 180),
         aspirate_shift = [0, 0, 2],
         dispense_height = dispenseHeight,
         syringe_speed = syringeSpeed,
@@ -874,7 +874,7 @@ soloSoft.getTip(tips)
 
 soloSoft.aspirate(
     position = stock_treatments,
-    aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(4, n_control_volume),
+    aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(5, n_control_volume),
     aspirate_shift = [0, 0, 2],
     mix_at_start = True,
     mix_cycles = mixCycles,
@@ -1225,11 +1225,12 @@ movements as well as the execution of the hso files
 '''
 
 softLinx = SoftLinx("Fourth_attempt", "C:\\Users\\svcaibio\\Dev\\Summer_stduents\\rpl-summer-2022\\gillian\\Fourth_attempt.slvp") # display name, path to saves
-softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate_96_Corning_3635_ClearUVAssay", "SoftLinx.PlateCrane.Stack4":"TipBox.50uL.Axygen-EV-50-R-S.tealbox"})
+softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96,Corning.3635.ClearUVAssay", "SoftLinx.PlateCrane.Stack4":"TipBox.50uL.Axygen-EV-50-R-S.tealbox"})
 #this is hwere you would softlinx run solo stuff, preparing diltuion stock (fill stuff in)###############
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack5"],["SoftLinx.Solo.Position4"],poolID = 5)
 softLinx.plateCraneRemoveLid(["SoftLinx.Solo.Position4"],["SoftLinx.PlateCrane.LidNest2"])
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
+softLinx.plateCraneMoveCrane("SoftLine.PlateCrane.Safe")
 
 list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9_1.hso", 
                     "dilution_C_M9_2.hso", "dilution_C_M9_3.hso", "dilution_C_M9_4.hso", "dilution_C_M9_4.hso", "dilution_N_M9_1.hso", 
@@ -1240,10 +1241,10 @@ list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9
                     "dilution_N_treatment_3.hso"]
 
 for c in list_of_dilution:
-    softLinx.soloSoftRun(c)
+    softLinx.soloSoftRun(Path+c)
 softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
-softLinx.soloSoftRun("dilution_control.hso")
+softLinx.soloSoftRun(Path+"dilution_control.hso")
 
 #prep the first assay plate###### 
 list_of_final_1 = ["cells_assay_1.hso", "cells_assay_2.hso", "control_assay.hso", 
@@ -1253,22 +1254,25 @@ list_of_final_2= ["dilution_assay_C_1.hso", "dilution_assay_C_2.hso",
 # still run at end "dilution_assay_N_2.hso"
 
 for c in list_of_final_1:
-    softLinx.soloSoftRun(c)
+    softLinx.soloSoftRun(Path+c)
 softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
+softLinx.plateCraneMoveCrane("SoftLine.PlateCrane.Safe")
 for c in list_of_final_2:
-    softLinx.soloSoftRun(c)
+    softLinx.soloSoftRun(Path+c)
 softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
-softLinx.soloSoftRun("dilution_assay_N_2.hso")
+softLinx.plateCraneMoveCrane("SoftLine.PlateCrane.Safe")
+softLinx.soloSoftRun(Path+"dilution_assay_N_2.hso")
 
 softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position4"],["SoftLinx.Hidex.Nest"])
 softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
 softLinx.hidexRun("pyhamilton")
 softLinx.plateCraneMovePlate(["SoftLinx.Hidex.Nest"],["SoftLinx.Liconic.Nest"])
 softLinx.plateCraneReplaceLid(["SoftLinx.PlateCrane.LidNest2"],["SoftLinx.Liconic.Nest"])
+softLinx.plateCraneMoveCrane("SoftLine.PlateCrane.Safe")
 softLinx.liconicLoadIncubator(loadID=1)
 
 softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
-
+softLinx.saveProtocol()
 #at this point the layout has been reset so a new plate can be made be repeating the same thing#
