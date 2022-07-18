@@ -6,7 +6,7 @@
 **Vision**
 Our main goal is finding the presence and location of key objects in the image, to measure if the robot has picked up or moved the correct hardware in the scene. The network should be able to identify different key items depending on the training data, yet be robust to visual interference caused by other objects in the scene and backgrounds and lighting conditions. Our secondary goal is training a network to analyze a material such as liquid in a beaker, the contents of a pipette, or textured objects like a used petri dish. This network should be able to classify the object into predefined categories to inform the robot of the current experimental progress. This network will also need to be robust to visual interference from the scene.
 **PyHamilton**
-The goal is to reproduce one of the biological experiments presented in the PyHamilton paper using the Python interface that has been developed for the Hudson SOLO liquid handler and Hudson SoftLinx integration system. We aim to prove that our completely open-source Python API is capable of executing the same biological experiments as Pyhamilton with similar results. Students on this project will also contribute to the growing library of biological protocols written for our Hudson robotic experimentation platform.
+The goal is to reproduce one of the biological experiments presented in the PyHamilton paper using the Python interface that has been developed for the Hudson SOLO liquid handler and Hudson SoftLinx integration system. We aim to prove that our completely open-source Python API is capable of executing the same biological experiments as Pyhamilton with similar results. Students on this project will also contribute to the growing library of biological protocols written for our Hudson robotic experimentation platform. *Any task that mentions PyHamilton is done in collaboration with Arleen Hidalgo and Gillian Camacho.*
 ## 6/24
 * I made a folder on the repo
 * I went through a tutorial on Pytorch
@@ -104,5 +104,16 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Was able to find code that converts the Unity json files to YOLO-readable files
 * Worked on creating a yaml file for the Unity images
 * Worked on Priyanka's paper
+## 7/15
+### To Do:
+* Work on yolov5
+* Meet Priyanka
+* Work on complete trial run of PyHamilton
+### Tasks Accomplished:
+* Met Priyanka to discuss papers
+* Worked on complete trial run of PyHamilton
+* Worked on yolov5 and was able to train on boxes and balls dataset and OT_1 dataset
+<img width="347" alt="image" src="https://user-images.githubusercontent.com/72309881/179525217-097b4d7a-fdb8-49cd-bbb5-4b146a61e76c.png">
+
 
 
