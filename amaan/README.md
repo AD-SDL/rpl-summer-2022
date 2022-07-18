@@ -97,6 +97,12 @@ In the secure biosystems lab, there are many robots that are in play. It is very
 * Began coding out what Rory and I decided above
 
 ### Friday, 7.15.22
-* 11am Weekly RPL Meeting
+* 11am Weekly RPL Meeting 
 * 2pm Journal Club
 * Worked on the code from yesterday
+* **TODO:**
+  - [ ] Fork repo, and move all contents in `rpl-camera-vision/rpl_cv/dashbord/` folder to `rpl-camera-vision/rpl_dashboard`
+  - [ ] Add a README inside `rpl_dashboard` folder explaining how to run project, dependencies, how to install everything, how to run the app, etc.
+  - [ ] Create a pull request with the changes in the forked repo to merge changes to main repo
+  - [ ] Finish socket server code for the 2-way communication w/ the button
+

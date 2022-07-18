@@ -49,3 +49,22 @@ Creating a fully autonomous lab with robots used for biology experiments.
 <h2> 7/7 </h2>
 * Worked on creating personal website <br>
 * Continued ROS lessons
+
+<h2> 7/8 </h2>
+* Started creating website <br>
+* Worked on ROS tutorials
+
+<h2> 7/11 </h2>
+* Made personal website
+
+<h2> 7/12 </h2>
+* Worked on ROS tutorials
+
+<h2> 7/13 </h2>
+* Set up a ROS talker and listener
+* Found out that a secure network is needed or else talker is sending information to entire Argonne Auth network
+
+<h2> 7/14 </h2>
+* Created a plan for ROS integration <br>
+* Updated readme to include example outputs for the commands
+
