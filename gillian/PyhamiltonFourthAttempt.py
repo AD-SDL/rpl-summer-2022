@@ -943,7 +943,7 @@ soloSoft.shuckTip()
 
 soloSoft.savePipeline() 
 
-#TIPS: uses 1 column of tips (5 columns used at this point)
+#TIPS: uses 1 column of tips
 
 soloSoft = SoloSoft(
     filename = "cells_assay_2.hso",
@@ -975,7 +975,7 @@ soloSoft.shuckTip()
 
 soloSoft.savePipeline() 
 
-#TIPS: uses 1 column of tips (6 columns used at this point)
+#TIPS: uses 1 column of tips (2 columns used at this point)
 
 soloSoft = SoloSoft(
     filename = "control_assay.hso",
@@ -1004,10 +1004,11 @@ for j in range(1,3):
             #dispense_height = dispenseHeight,
             syringe_speed = syringeSpeed,
             )
+    soloSoft.shuckTip()
+
+#TIPS: uses 2 columns (4 columns used at this point)
 
 soloSoft.savePipeline()
-
-#TIPS: uses 1 column of tips (7 columns used at this point)
 
 ################################################################
 
@@ -1024,12 +1025,11 @@ soloSoft = SoloSoft(
     plateList = plate_list,
     ) 
 
-soloSoft.getTip(tips)
-
 transfer_volume = 20
 
 #for i in range(1,6):
 for i in range(1,3):
+    soloSoft.getTip(tips)
     soloSoft.aspirate(
         position = dilution,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(1, transfer_volume*5),
@@ -1051,8 +1051,10 @@ for i in range(1,3):
             aspirate_height = aspirateHeight,
             syringe_speed = syringeSpeed,
             )
+    soloSoft.shuckTip()
 
 for i in range(1,3):
+    soloSoft.getTip(tips)
     soloSoft.aspirate(
         position = dilution,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(2, transfer_volume*5),
@@ -1074,11 +1076,11 @@ for i in range(1,3):
             aspirate_height = aspirateHeight,
             syringe_speed = syringeSpeed,
             )
+    soloSoft.shuckTip()
 
 soloSoft.savePipeline() 
 
-#TIPS: uses 1 column of tips (8 columns used at this point) EMPTY
-#NEED TO GET NEW TIP BOX
+#TIPS: uses 4 column of tips (8 columns used at this point)
 
 ##########Carbon####### 
 #######Starting a new SoloSoft for carbon on the first half of the assay plate######
@@ -1087,11 +1089,10 @@ soloSoft = SoloSoft(
     plateList = plate_list,
     ) 
 
-soloSoft.getTip(tips)
-
 transfer_volume = 20 
 
 for i in range(1,3):
+    soloSoft.getTip(tips)
     soloSoft.aspirate(
         position = dilution,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(3, transfer_volume*5),
@@ -1113,12 +1114,11 @@ for i in range(1,3):
             #aspirate_height = aspirateHeight,
             syringe_speed = syringeSpeed,
             )
-
-soloSoft.shuckTip()
+    soloSoft.shuckTip()
 
 soloSoft.savePipeline() 
 
-#TIPS: uses 1 column of tips
+#TIPS: uses 2 columns of tips (10 used at this point)
 
 #######Starting a new SoloSoft for carbon on the second half of the assay plate######
 soloSoft = SoloSoft(
@@ -1126,11 +1126,10 @@ soloSoft = SoloSoft(
     plateList = plate_list,
     ) 
 
-soloSoft.getTip(tips)
-
 transfer_volume = 20 
 
 for i in range(1,3):
+    soloSoft.getTip(tips)
     soloSoft.aspirate(
         position = dilution,
         aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(5, transfer_volume*5),
@@ -1152,12 +1151,12 @@ for i in range(1,3):
             aspirate_height = aspirateHeight,
             syringe_speed = syringeSpeed,
             )
-
-soloSoft.shuckTip()
+    soloSoft.shuckTip()
 
 soloSoft.savePipeline() 
 
-#TIPS: uses 1 column of tips (2 columns used at this point)
+#TIPS: uses 2 column of tips (12 columns used at this point) EMPTY
+#GET NEW TIP BOX HERE#
 
 #######Nitrogen############ 
 #######Starting a new SoloSoft for nitrogen on the first half of the assay plate######
@@ -1194,8 +1193,7 @@ for i in reversed(range(1,6)):
 
 soloSoft.savePipeline() 
 
-#TIPS: uses 5 column of tips (7 columns used at this point)
-#GET NEW TIP BOX HERE#
+#TIPS: uses 5 column of tips
 
 #######Starting a new SoloSoft for nitrogen on the second half of the assay plate######
 soloSoft = SoloSoft(
@@ -1230,6 +1228,8 @@ for i in reversed(range(7,12)):
 
 soloSoft.savePipeline() 
 
+#TIPS: uses 5 columns of tips (10 columns used at this point)
+
 ##############################################################
 '''
 This is the Softlinx part of the code that entails the crane 
@@ -1250,37 +1250,32 @@ list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9
                     "dilution_C_treatment_1.hso", "dilution_C_treatment_2.hso", 
                     "dilution_C_treatment_3.hso", "dilution_C_treatment_4.hso", 
                     "dilution_N_treatment_1.hso", "dilution_N_treatment_2.hso", 
-                    "dilution_N_treatment_3.hso"]
+                    "dilution_N_treatment_3.hso", "dilution_control.hso"]
 
 for c in list_of_dilution:
     softLinx.soloSoftRun(c)
-softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
-softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
-softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
-
-softLinx.soloSoftRun("dilution_control.hso")
 
 for i in range(1,4):
-    softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
 
     #prep the first assay plate###### 
     list_of_final_1 = ["cells_assay_1.hso", "cells_assay_2.hso", "control_assay.hso", 
-                    "dilution_assay_P_1.hso"]               
-    list_of_final_2= ["dilution_assay_C_1.hso", "dilution_assay_C_2.hso", 
-                    "dilution_assay_N_1.hso"]
+                    "dilution_assay_P_1.hso", "dilution_assay_C_1.hso", "dilution_assay_C_2.hso"]               
+    list_of_final_2= ["dilution_assay_N_1.hso", "dilution_assay_N_2.hso"]
     # still run at end "dilution_assay_N_2.hso"
 
     for c in list_of_final_1:
         softLinx.soloSoftRun(c)
+
     softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
+    softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
+
     for c in list_of_final_2:
         softLinx.soloSoftRun(c)
+
     softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
-    softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
-    softLinx.soloSoftRun("dilution_assay_N_2.hso")
 
     softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position4"],["SoftLinx.Hidex.Nest"])
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
