@@ -99,4 +99,7 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * We all tested out protocol using water and food dye to see how well it would run from top to bottom. It gave us an idea of where improvements can be made like moving the plate crane to safe after changing tip boxes, so we will meet next week to make edits. Overall it was a successful first run
 
 ### 7/16
-* 
+* I worked more on my poster
+* I attended a talk about nitrogen vacancies in diamonds
+* I attended a talk about using deep learning to model fluid dynamics
+* I made the changes to the pyhamilton protocol and recounted how many tips would be used so that I could restructure where it would be ideal to replace the tip box. I also had to add more tip replacements because I did not want to contaminate the dilution plate with cells
