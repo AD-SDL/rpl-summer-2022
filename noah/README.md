@@ -45,3 +45,8 @@ Tasks may include compiling data for operational reporting and stakeholder manag
 ## 07/14
 * I started taking inventory of all the equipment in the RPL.
 * I continued working on my final poster presentation.
+
+## 07/18
+* I continued working on the RPL inventory.
+* I started collecting documentation for some of the RPL robots.
+* I continued working on my final poster presentation.
