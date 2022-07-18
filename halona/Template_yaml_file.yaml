@@ -1,0 +1,7 @@
+path: #path to the dataset folder eg. ../datasets/OT_1
+train: #training images eg. images
+val: #validation images eg.images
+test: #optional 
+
+nc: #number of classes eg. 1
+names: #list of names of the classes in order eg. ['pipette']
