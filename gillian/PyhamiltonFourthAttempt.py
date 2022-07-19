@@ -1262,7 +1262,6 @@ for i in range(1,4):
     list_of_final_1 = ["cells_assay_1.hso", "cells_assay_2.hso", "control_assay.hso", 
                     "dilution_assay_P_1.hso", "dilution_assay_C_1.hso", "dilution_assay_C_2.hso"]               
     list_of_final_2= ["dilution_assay_N_1.hso", "dilution_assay_N_2.hso"]
-    # still run at end "dilution_assay_N_2.hso"
 
     for c in list_of_final_1:
         softLinx.soloSoftRun(Path+c)
