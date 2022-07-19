@@ -68,3 +68,14 @@ Creating a fully autonomous lab with robots used for biology experiments.
 * Created a plan for ROS integration <br>
 * Updated readme to include example outputs for the commands
 
+<h2> 7/15 </h2>
+* Worked with Eric to create ROS wrapper for sealer/peeler
+* A ROS wrapper is used to integrate ROS files with non ROS files
+* Created packages, nodes, and contained drivers
+
+<h2> 7/18 </h2>
+* Went through steps to be able to send commands to Peeler on MJ
+* Documented setup steps for this in readme
+* Made nodes able to send commands to peeler and sealer
+* Modified peeler client to store all output in variable that can be called by the nodes
+* Implemented if statements with switch case
