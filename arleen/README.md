@@ -61,5 +61,16 @@ For this project, we will reproduce one of the biological experiments presented 
 * Worked on writting the steps down for some of the other papers I found for Pryianka's project. 
 * Attended a mandatory Seminar about our research project presentations and all the deliverables. 
 
+### 7/14/22
+* Worked on finishing writting down the steps down for all of Pryianka's papers for her project. 
+* Attended Rory's Learn something new tutorial about computer vision 
 
+### 7/15/22
+* Completed a complete run test of the PyHamilton protocol on the Hudson using water and food coloring. 
+* Made some adjustments to the code based on how the trial went. 
+* Worked on the presentation for RPL's update meeting and then went to the meeting. 
+* Started working on my poster. 
 
+### 7/18/22
+* Worked on my poster and other deliverables 
+* Finished fixing some minor adjustments on the code 
