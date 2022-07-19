@@ -1287,7 +1287,7 @@ for i in range(1,4):
     softLinx.hidexRun("pyhamilton")
     softLinx.plateCraneMovePlate(["SoftLinx.Hidex.Nest"],["SoftLinx.Liconic.Nest"])
     softLinx.plateCraneReplaceLid(["SoftLinx.PlateCrane.LidNest2"],["SoftLinx.Liconic.Nest"])
-    softLinx.liconicLoadIncubator(loadID=1)
+    softLinx.liconicLoadIncubator(loadID=i)
 softLinx.saveProtocol()
 
 #at this point the layout has been reset so a new plate can be made be repeating the same thing#
