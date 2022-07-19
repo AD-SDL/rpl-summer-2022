@@ -98,8 +98,15 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I met with Priyanka to talk about the progress I've made for the XDL project and to discuss how I should continue going about writing protocols
 * We all tested out protocol using water and food dye to see how well it would run from top to bottom. It gave us an idea of where improvements can be made like moving the plate crane to safe after changing tip boxes, so we will meet next week to make edits. Overall it was a successful first run
 
-### 7/16
+### 7/18
 * I worked more on my poster
 * I attended a talk about nitrogen vacancies in diamonds
 * I attended a talk about using deep learning to model fluid dynamics
 * I made the changes to the pyhamilton protocol and recounted how many tips would be used so that I could restructure where it would be ideal to replace the tip box. I also had to add more tip replacements because I did not want to contaminate the dilution plate with cells
+* I met with Arleen and Halona to go through the full code in depth to see where there may be any small errors and we decided it was ready for another test
+* I completed a first draft of my poster and sent it out for feedback to Arvind. I am still adding to my motivations section and I want to make a better graphic for the procedure
+
+### 7/19
+* I sent my poster draft to Carla for feedback
+* I finished a draft of my 150-word abstract and kept thinking of title ideas
+* I set up the next test of our code with Casey at 12:30

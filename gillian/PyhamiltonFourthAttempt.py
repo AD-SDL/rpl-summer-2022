@@ -1241,7 +1241,9 @@ softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96.Corning.3635.ClearUV
 #this is where you would softlinx run solo stuff, preparing diltuion stock (fill stuff in)###############
 
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
+
 softLinx.plateCraneMoveCrane("SoftLine.PlateCrane.Safe")
+
 
 list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9_1.hso", 
                     "dilution_C_M9_2.hso", "dilution_C_M9_3.hso", "dilution_C_M9_4.hso", 
