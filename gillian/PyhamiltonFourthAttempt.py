@@ -1242,7 +1242,7 @@ softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96.Corning.3635.ClearUV
 
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
 
-softLinx.plateCraneMoveCrane("SoftLine.PlateCrane.Safe")
+softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
 
 
 list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9_1.hso", 
