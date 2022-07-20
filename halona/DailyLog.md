@@ -119,6 +119,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Work on poster
 ### Tasks Accomplished:
 * Worked on poster
+* Met Rory and Saaya to talk about Vision
 ## 7/19
 ### To Do:
 * Work on poster
