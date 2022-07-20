@@ -105,9 +105,13 @@ soloSoft.savePipeline()
 
 '''Carbon columns
 C1 cells should have no media
+    columns 3-4 every other row starting with the first
 C2 cells should have 600 ul media
+    columns 3-4 every other row starting with the second
 C3 cells should have 900 uL media
+    columns 5-6 every other row starting with the first
 C4 cells should have 1050 uL media
+    columns 5-6 every other row starting with the second
 '''
 
 #C2#
@@ -292,6 +296,11 @@ soloSoft = SoloSoft(
 soloSoft.getTip(tips)
 
 #N2#
+'''
+This code makes 4 transfers (j for loop) of 150 uL to column 8 in the dilution plate from the same column of the
+stock media plate. This adds to a volume of 600 uL as desired
+'''
+
 for j in range(1,5):
     transfer_volume = 150
     soloSoft.aspirate(
@@ -310,6 +319,11 @@ for j in range(1,5):
         )
 
 #N3#
+'''
+This code makes 5 transfers (j for loop) of 180 uL to column 9 in the dilution plate from the same column of the
+stock media plate. This adds to a volume of 900 uL as desired
+'''
+
 for j in range(1,6):
     transfer_volume = 180
     soloSoft.aspirate(
@@ -341,6 +355,11 @@ soloSoft = SoloSoft(
 soloSoft.getTip(tips)
 
 #N4#
+'''
+This code makes 6 transfers (j for loop) of 175 uL to column 10 in the dilution plate from the same column of the
+stock media plate. This adds to a volume of 1050 uL as desired
+'''
+
 for j in range(1,7):
     transfer_volume = 175
     soloSoft.aspirate(
@@ -359,6 +378,15 @@ for j in range(1,7):
         )
 
 #N5#
+'''
+This code makes 9 transfers (j for loop) of 125 uL to column 11 in the dilution plate from columns 11 and 12 of the
+stock media plate. This adds to a volume of 1125 uL as desired
+
+This takes 500 uL (4 x 125) from column 11 of the stock media plate and 625 (5 x 125) from column 12 because
+taking all 1125 uL from the same column would result in too little media remaining by the final transfer. This
+could result in an inaccurate volume being trasferred, so it was split into two sections
+'''
+
 for j in range(1,5):
     transfer_volume = 125
     soloSoft.aspirate(
@@ -400,10 +428,17 @@ soloSoft.savePipeline()
 #TIPS: uses a column of tips (3 columns used at this point and one of another)
 
 ############################Treatments into dilution plate#############################
-rows = ["A", "B", "C", "D", "E", "F", "G", "H"]
 
 #Phosphorus
-#P1 at 10X, P2 at 5X, P3 at 2.5X, P4 at 1.25X
+'''
+P1 at 10X, P2 at 5X, P3 at 2.5X, P4 at 1.25X
+
+Rows 1-2 should have 1200 uL P
+Rows 3-4 should have 600 uL P
+Rows 5-6 should have 300 uL P
+Rows 7-8 should have 150 uL P
+'''
+
 soloSoft = SoloSoft(
     filename = "dilution_P_treatment_1.hso",
     plateList = plate_list,
@@ -414,6 +449,11 @@ soloSoft.getTip(position=tips, num_tips=2)
 transfer_volume = 150
 
 #for P4#
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 1 and 2 (i) with the first tip being set in row G.
+This uses two tips, so the second tip makes the transfer to the following row, row H
+'''
+
 for i in range(1,3):
     soloSoft.aspirate(
         position = stock_treatments,
@@ -434,7 +474,13 @@ for i in range(1,3):
         )
 
 #for P3#
-#there are two for loops because we need to transfer into two columns then repeat that a second time#
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 1 and 2 (i) with the first tip being set in row E.
+This uses two tips, so the second tip makes the transfer to the following row, row F
+
+This is repeated twice via the j for loop to transfer a total volume of 300 uL to each of these wells
+'''
+
 for j in range(1,3):
     for i in range(1,3):
         soloSoft.aspirate(
@@ -456,7 +502,13 @@ for j in range(1,3):
             )
 
 #for P2#
-#the two for loops are because we need to transfer to two columns and repeat the same transfer 4 times#
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 1 and 2 (i) with the first tip being set in row C.
+This uses two tips, so the second tip makes the transfer to the following row, row D
+
+This is repeated 4 times via the j for loop to transfer a total volume of 600 uL to each of these wells
+'''
+
 for j in range(1,5):
     for i in range(1,3):
         soloSoft.aspirate(
@@ -493,6 +545,22 @@ soloSoft.getTip(position=tips, num_tips=2)
 transfer_volume = 150
 
 #for P1#
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 1 and 2 (i) with the first tip being set in row A.
+This uses two tips, so the second tip makes the transfer to the following row, row B
+
+This is repeated 8 times via the j for loop to transfer a total volume of 1200 uL to each of these wells
+
+The expression:
+    ((j-1)//2) + 9
+is used to aspirate P from columns 9, 10, 11, then 12. The first repetition (j = 1) makes the expression equal to 9, so 150 uL is aspirated from
+column 9. The second repetition is the same. The third repetition (j = 3) makes the expression equal to 10, so 150 uL is aspirated from column 10 instead.
+This pattern repeats and takes 300 ul from each of the 4 columns instead of taking 1200 from a single one
+
+This prevents too much volume from being taken from the same columns, which could result in running out of treatment or leaving too little treatment
+in the column for the liquid handler to take up the necessary amount.
+'''
+
 for j in range(1,9):
     for i in range(1,3):
         soloSoft.aspirate(
