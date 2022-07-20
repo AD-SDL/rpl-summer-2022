@@ -54,3 +54,7 @@ Tasks may include compiling data for operational reporting and stakeholder manag
 ## 07/19
 * I finished the preliminary RPL inventory.
 * I uploaded a lot of the documentation for the RPL robots to the box folder.
+
+## 07/20 
+* I finished my final poster presentation.
+* I created a layout mapping where all the robots are located in the RPL.
