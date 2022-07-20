@@ -1259,13 +1259,26 @@ for i in range(1,4):
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
 
-    #prep the first assay plate###### 
+    '''
+    prepare assay plate
+
+    hso files listed to be run in chronological order and divided into a new list once the 
+    tip box is empty and needs to be replaced
+    '''
+
     list_of_final_1 = ["cells_assay_1.hso", "cells_assay_2.hso", "control_assay.hso", 
                     "dilution_assay_P_1.hso", "dilution_assay_C_1.hso", "dilution_assay_C_2.hso"]               
     list_of_final_2= ["dilution_assay_N_1.hso", "dilution_assay_N_2.hso"]
 
     for c in list_of_final_1:
         softLinx.soloSoftRun(Path+c)
+
+    '''
+    Plate crane movements:
+        remove empty tip box from stage
+        place new full tip box on stage
+        move plate crane away from possible collision with liquid handler
+    '''
 
     softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
