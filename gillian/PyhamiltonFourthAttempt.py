@@ -1,16 +1,20 @@
 #########################Fourth Assembly with pipette volume edits and hso file splitting edits########################################
 
 from liquidhandling import SoloSoft, SoftLinx
+
+#can we get rid of this one below I don't know what purpose it's serving#
 from liquidhandling import Plate_96_Corning_3635_ClearUVAssay
 
 '''
 This code makes the required hso files that will be called in 
-next section
+the end section chronologically to run the desired experiment
+
 The code for this is divided into 3 sections:
 - making the dilution plate
 - transferring cells into the final assay
 - transferring nutrients from dilution plate to final assay plate
 '''
+
 Path = "C:\\Users\\svcaibio\\Dev\\Summer_stduents\\rpl-summer-2022\\gillian\\"
 
 #declaring variables used throughout protocol
@@ -26,7 +30,10 @@ syringeSpeed = 50
 mixCycles = 3
 mixVolume = 60
 cells_volume = 80
+rows = ["A", "B", "C", "D", "E", "F", "G", "H"]
 
+#defines what plate type is at each location on the stage with position 1 being the first item in the list and position 8 being the last
+#this includes plates that the plate crane will move into place once the protocol begins as well as what is placed manually
 plate_list= [
         "DeepBlock.96.VWR-75870-792.sterile",
         "Empty",
@@ -40,8 +47,7 @@ plate_list= [
 
 
 #making dilution plate
-############################M9 media into dilution plate#############################
-rows = ["A", "B", "C", "D", "E", "F", "G", "H"]
+############################ M9 media into dilution plate #############################
 
 '''Phosphorus columns (stock is 10X)
 Rows 1-2 should have no media
@@ -49,6 +55,18 @@ Rows 3-4 should have 600 uL media
 Rows 5-6 should have 900 uL media
 Rows 7-8 should have 1050 uL media
 
+the rest of the working volume (1200 uL) is taken up by the treatments themselves to make the desired concentrations
+
+For columnns 1 and 2 in the third through eighth row, different volumes of media are added so that the final M9
+volumes will equal what is desired (above). 
+
+Because 2 tips are use and the placement of the first tip determines where the rest aspirate and dispense, the cell that
+is set as the destination for the liquid handler skips one row each time. The second tip performs the commands for the 
+"skipped" row. This code aspirates and dispenses 100 uL, then 150 uL, then 175 uL across columns 1 and 2 for 3 repetitions 
+(given by the j for loop), and this incremental increase goes down the column to create four regions of increasing media volume
+
+The same volumes are put into a row of wells in each column (i) first, then the liquid handler does the same in the next 2 rows,
+then this process is repeated 3 times
 '''
 
 #run this hso twice#
@@ -93,6 +111,14 @@ C4 cells should have 1050 uL media
 '''
 
 #C2#
+'''
+For columnns 3 and 4 in every other row starting with the second row, different volumes of media are added so that the final M9
+volumes will equal what is desired (above) after 4 repetitions
+
+This code aspirates and dispenses 150 into a row of wells in each column (i) first, then the liquid handler does the same for every other
+row going down the columns. The j for loop repeats the process 4 times for a total volume of 600 uL
+'''
+
 soloSoft = SoloSoft(
     filename = "dilution_C_M9_1.hso",
     plateList = plate_list,
@@ -126,6 +152,18 @@ soloSoft.savePipeline()
 #TIPS: uses 1 tips (5 total at this point)
 
 #C3#
+'''
+For columnns 5 and 6 in every other row starting with the first row, different volumes of media are added so that the final M9
+volumes will equal what is desired (above) after 5 repetitions
+
+This code aspirates and dispenses 180 into a row of wells in each column (i) first, then the liquid handler does the same for every other
+row going down the columns. The first j for loop repeats the process 3 times for a total volume of 540 uL. The next sectino of code does the same for 2
+repetitions for a total volume of 360 uL, so a total 900 uL is added as desired.
+
+These are split into two different hso files because if they were combined, the total number of steps
+would exceed what can be handled by the software
+'''
+
 soloSoft = SoloSoft(
     filename = "dilution_C_M9_2.hso",
     plateList = plate_list,
@@ -191,7 +229,20 @@ soloSoft.savePipeline()
 #TIPS: uses 1 tips (7 total at this point)
 
 #C4#
-#CALL TWICE
+#call this hso twice#
+
+'''
+For columnns 5 and 6 in every other row starting with the second row, different volumes of media are added so that the final M9
+volumes will equal what is desired (above) after 6 repetitions
+
+This code aspirates and dispenses 175 into a row of wells in each column (i) first, then the liquid handler does the same for every other
+row going down the columns. The j for loop repeats the process 3 times for a total volume of 525 uL. The hso is called twice, giving a
+total volume of 1050 uL as desired
+
+These are split into two different hso files because if they were combined, the total number of steps
+would exceed what can be handled by the software
+'''
+
 soloSoft = SoloSoft(
     filename = "dilution_C_M9_4.hso",
     plateList = plate_list,
@@ -1262,6 +1313,8 @@ for c in list_of_dilution:
 for i in range(1,4):
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack5"],["SoftLinx.Solo.Position4"],poolID = 5)
     softLinx.plateCraneRemoveLid(["SoftLinx.Solo.Position4"],["SoftLinx.PlateCrane.LidNest2"])
+
+    softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
 
@@ -1293,14 +1346,13 @@ for i in range(1,4):
     for c in list_of_final_2:
         softLinx.soloSoftRun(Path+c)
 
-    softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
-
     softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position4"],["SoftLinx.Hidex.Nest"])
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
     softLinx.hidexRun("pyhamilton")
     softLinx.plateCraneMovePlate(["SoftLinx.Hidex.Nest"],["SoftLinx.Liconic.Nest"])
+    softLinx.hidexClose()
     softLinx.plateCraneReplaceLid(["SoftLinx.PlateCrane.LidNest2"],["SoftLinx.Liconic.Nest"])
-    softLinx.liconicLoadIncubator(loadID=1)
+    softLinx.liconicLoadIncubator(loadID=i)
 softLinx.saveProtocol()
 
 #at this point the layout has been reset so a new plate can be made be repeating the same thing#
