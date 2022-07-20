@@ -1027,7 +1027,8 @@ soloSoft.savePipeline()
 
 #############################cells to assay##########################
 '''
-The following code transfers cells to the final assay plate, 80 uL per well
+The following code transfers cells to the final assay plate, 80 uL per well (cells_volume). 
+Uses 8 tips (1 column) for colums 1 through 5 of the assay plate and another column of tips for columns 7 through 11 of the assay plate. 
 '''
 #start with its own new tip box so that adding adding additional plates can be done easily without extra math to see how many tips are used#
 
@@ -1095,6 +1096,10 @@ soloSoft.shuckTip()
 soloSoft.savePipeline() 
 
 #TIPS: uses 1 column of tips (2 columns used at this point)
+'''
+The following code transfers the control column from the dilution plate (column 12) to the assay plate (colum 6 and 12). 
+This is repeated 2 times via the j for loop to transfer a total volume of 180 uL to each well. Uses 8 tips per loop for a total of two columns. 
+'''
 
 soloSoft = SoloSoft(
     filename = "control_assay.hso",
