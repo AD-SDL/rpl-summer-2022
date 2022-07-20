@@ -114,6 +114,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Worked on complete trial run of PyHamilton
 * Worked on yolov5 and was able to train on boxes and balls dataset and OT_1 dataset
 <img width="347" alt="image" src="https://user-images.githubusercontent.com/72309881/179525217-097b4d7a-fdb8-49cd-bbb5-4b146a61e76c.png">
+
 ## 7/18
 ### To Do:
 * Work on poster
@@ -128,6 +129,13 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Worked on first draft of poster
 * We successfully ran the code on Hudson
 * Trained network for 100 epochs to get data for poster
+
+<img width="347" alt="image" src="https://user-images.githubusercontent.com/72309881/180072938-d7341050-b66a-4143-98ac-c78a8e5aa3ee.jpg">
+<img width="347" alt="image" src="https://user-images.githubusercontent.com/72309881/180074104-11857804-8a0a-42ef-9bd3-2081d5640851.jpg">
+
+
+
+
 ### 7/20
 ### To Do:
 * Finish poster
