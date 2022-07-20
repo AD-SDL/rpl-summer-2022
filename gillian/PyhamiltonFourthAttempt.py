@@ -1027,7 +1027,7 @@ soloSoft.savePipeline()
 
 #############################cells to assay##########################
 '''
-The following code transfers cells to the final assay plate, 80 uL per cell
+The following code transfers cells to the final assay plate, 80 uL per well
 '''
 #start with its own new tip box so that adding adding additional plates can be done easily without extra math to see how many tips are used#
 
