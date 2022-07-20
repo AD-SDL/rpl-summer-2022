@@ -1236,10 +1236,14 @@ movements as well as the execution of the hso files
 '''
 
 softLinx = SoftLinx("Fourth_attempt", "C:\\Users\\svcaibio\\Dev\\Summer_stduents\\rpl-summer-2022\\gillian\\Fourth_attempt.slvp") # display name, path to saves
-softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate_96_Corning_3635_ClearUVAssay", "SoftLinx.PlateCrane.Stack4":"TipBox.50uL.Axygen-EV-50-R-S.tealbox"})
+
+softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96.Corning.3635.ClearUVAssay", "SoftLinx.PlateCrane.Stack4":"TipBox.50uL.Axygen-EV-50-R-S.tealbox"})
 #this is where you would softlinx run solo stuff, preparing diltuion stock (fill stuff in)###############
+
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
-softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
+
+softLinx.plateCraneMoveCrane("SoftLine.PlateCrane.Safe")
+
 
 list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9_1.hso", 
                     "dilution_C_M9_2.hso", "dilution_C_M9_3.hso", "dilution_C_M9_4.hso", 
@@ -1252,6 +1256,8 @@ list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9
 
 for c in list_of_dilution:
     softLinx.soloSoftRun(Path+c)
+
+
 
 for i in range(1,4):
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack5"],["SoftLinx.Solo.Position4"],poolID = 5)
@@ -1295,5 +1301,6 @@ for i in range(1,4):
     softLinx.plateCraneMovePlate(["SoftLinx.Hidex.Nest"],["SoftLinx.Liconic.Nest"])
     softLinx.plateCraneReplaceLid(["SoftLinx.PlateCrane.LidNest2"],["SoftLinx.Liconic.Nest"])
     softLinx.liconicLoadIncubator(loadID=1)
+softLinx.saveProtocol()
 
 #at this point the layout has been reset so a new plate can be made be repeating the same thing#
