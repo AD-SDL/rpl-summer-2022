@@ -1381,7 +1381,9 @@ list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9
 for c in list_of_dilution:
     softLinx.soloSoftRun(Path+c)
 
-
+''' In order to prepare plates in triplicate, we use a for loop to run the code 3 times
+Note: Only the code that prepares the assay plate and the plate crane movements that are responsible 
+for moving the plate to Hidex and the incubator are in this loop'''
 
 for i in range(1,4):
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack5"],["SoftLinx.Solo.Position4"],poolID = 5)
