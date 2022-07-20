@@ -114,6 +114,27 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Worked on complete trial run of PyHamilton
 * Worked on yolov5 and was able to train on boxes and balls dataset and OT_1 dataset
 <img width="347" alt="image" src="https://user-images.githubusercontent.com/72309881/179525217-097b4d7a-fdb8-49cd-bbb5-4b146a61e76c.png">
+## 7/18
+### To Do:
+### Tasks Accomplished:
+### To Do:
+## 7/19
+### To Do:
+* Work on poster
+* Run code for PyHamilton on Hudson
+### Tasks Accomplished:
+* Worked on first draft of poster
+* We successfully ran the code on Hudson
+![image](https://user-images.githubusercontent.com/72309881/180071183-58ffb39a-8e1d-40c2-89b8-1e0e7c54a345.png)
+
+
+### 7/20
+### To Do:
+* Finish poster
+* Work on getting more data (training on new dataset) for data
+### Tasks Accomplished:
+* Finished poster
+* Trained on OT_2
 
 
 
