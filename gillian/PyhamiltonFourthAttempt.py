@@ -1237,7 +1237,7 @@ movements as well as the execution of the hso files
 
 softLinx = SoftLinx("Fourth_attempt", "C:\\Users\\svcaibio\\Dev\\Summer_stduents\\rpl-summer-2022\\gillian\\Fourth_attempt.slvp") # display name, path to saves
 
-softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96.Corning.3635.ClearUVAssay", "SoftLinx.PlateCrane.Stack4":"TipBox.50uL.Axygen-EV-50-R-S.tealbox"})
+softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96.Corning-3635.ClearUVAssay", "SoftLinx.PlateCrane.Stack4":"TipBox.50uL.Axygen-EV-50-R-S.tealbox"})
 #this is where you would softlinx run solo stuff, preparing diltuion stock (fill stuff in)###############
 
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)

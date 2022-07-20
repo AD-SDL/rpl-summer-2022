@@ -110,3 +110,9 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I sent my poster draft to Carla for feedback
 * I finished a draft of my 150-word abstract and kept thinking of title ideas
 * I set up the next test of our code with Casey at 12:30
+* We all tested the protocol including three replicate assay plates. There were minor issues with plate definitions and the software slowing down, but it was relatively successful and almost ready to test with the real materials
+
+### 7/20
+* I attended a resume workshop and updated my resume to include this internship. I still have changes to make to the format and things to add to make it more representative of my experience level but it is improving
+* I finished a second draft of my poster and resent it to Arvind for feedback
+* I went through the code and made more detailed comments that describe the procedure as it is supposed to happen
