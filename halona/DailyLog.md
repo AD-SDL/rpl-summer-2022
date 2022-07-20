@@ -116,8 +116,9 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 <img width="347" alt="image" src="https://user-images.githubusercontent.com/72309881/179525217-097b4d7a-fdb8-49cd-bbb5-4b146a61e76c.png">
 ## 7/18
 ### To Do:
+* Work on poster
 ### Tasks Accomplished:
-### To Do:
+* Worked on poster
 ## 7/19
 ### To Do:
 * Work on poster
@@ -125,9 +126,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 ### Tasks Accomplished:
 * Worked on first draft of poster
 * We successfully ran the code on Hudson
-![image](https://user-images.githubusercontent.com/72309881/180071183-58ffb39a-8e1d-40c2-89b8-1e0e7c54a345.png)
-
-
+* Trained network for 100 epochs to get data for poster
 ### 7/20
 ### To Do:
 * Finish poster
