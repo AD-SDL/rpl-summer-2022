@@ -116,3 +116,8 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I attended a resume workshop and updated my resume to include this internship. I still have changes to make to the format and things to add to make it more representative of my experience level but it is improving
 * I finished a second draft of my poster and resent it to Arvind for feedback
 * I went through the code and made more detailed comments that describe the procedure as it is supposed to happen
+* I sent my poster to Casey for feedback
+
+### 7/21
+* I edited my poster with Casey and Arvind's recommendations in mind and finished a new draft of it
+* 
