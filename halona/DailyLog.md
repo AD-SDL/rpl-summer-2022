@@ -144,5 +144,15 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Finished poster
 * Trained on OT_2
 
+### 7/21
+### To Do:
+* Finish and submit poster
+* Meet Saaya to talk about automating making yaml file and training using YOLO
+### Tasks Accomplished:
+* Submitted poster
+* Met Saaya and went over automating yaml file (approach)
+* Met Arvind with Rory and Saaya to talk about YOLO
+
+
 
 
