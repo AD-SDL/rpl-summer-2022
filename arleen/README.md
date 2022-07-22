@@ -66,7 +66,7 @@ For this project, we will reproduce one of the biological experiments presented 
 * Attended Rory's Learn something new tutorial about computer vision 
 
 ### 7/15/22
-* Completed a complete run test of the PyHamilton protocol on the Hudson using water and food coloring. 
+* Completed a run test of the PyHamilton protocol on the Hudson using water and food coloring. 
 * Made some adjustments to the code based on how the trial went. 
 * Worked on the presentation for RPL's update meeting and then went to the meeting. 
 * Started working on my poster. 
@@ -74,3 +74,13 @@ For this project, we will reproduce one of the biological experiments presented 
 ### 7/18/22
 * Worked on my poster and other deliverables 
 * Finished fixing some minor adjustments on the code 
+
+### 7/19/22
+* Completed a test run of the PyHamilton protocol in triplicate. 
+* Made some adjustments based on how the testing went 
+* Completed my first draft of my poster and sent it to Carla and Casey for feedback. 
+
+### 7/20/22 
+* Attended a mandatory seminar about how to write a resume. 
+* Recieved feedback on my poster and made some changes. Sent my second draft to Carla, Casey and Arvind. 
+* Wrote some notes on the steps for preping the assay plate. 
