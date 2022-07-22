@@ -84,3 +84,11 @@ For this project, we will reproduce one of the biological experiments presented 
 * Attended a mandatory seminar about how to write a resume. 
 * Recieved feedback on my poster and made some changes. Sent my second draft to Carla, Casey and Arvind. 
 * Wrote some notes on the steps for preping the assay plate. 
+
+### 7/21/22
+* Finished my poster and submitted it to the box folder. 
+* Attended my students connects meeting 
+
+### 7/22/22 
+* Did our presentation for the meeting of the RPL updates and then attended the meeting 
+* 
