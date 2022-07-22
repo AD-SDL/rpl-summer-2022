@@ -120,4 +120,8 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 
 ### 7/21
 * I edited my poster with Casey and Arvind's recommendations in mind and finished a new draft of it
-* 
+* I wrote a protocol for another paper for Priyanka and the XDL project
+* I submitted my final poster draft
+* I updated my resume
+
+### 7/22
