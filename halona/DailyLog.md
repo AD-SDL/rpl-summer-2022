@@ -136,7 +136,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 
 
 
-### 7/20
+## 7/20
 ### To Do:
 * Finish poster
 * Work on getting more data (training on new dataset) for data
@@ -144,7 +144,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Finished poster
 * Trained on OT_2
 
-### 7/21
+## 7/21
 ### To Do:
 * Finish and submit poster
 * Meet Saaya to talk about automating making yaml file and training using YOLO
@@ -153,6 +153,18 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Met Saaya and went over automating yaml file (approach)
 * Met Arvind with Rory and Saaya to talk about YOLO
 
+## 7/22
+### To Do:
+* Work on student meeting presentation
+### Tasks Accomplished:
+* Worked and presented student meeting presentation
+
+## 7/25
+### To Do:
+* Work on documentation of PyHamilton code
+* Work on Priyanka's papers
+* Work on automating yaml file
+### Tasks Accomplished:
 
 
 
