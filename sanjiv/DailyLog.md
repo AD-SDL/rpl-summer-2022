@@ -83,3 +83,12 @@ Creating a fully autonomous lab with robots used for biology experiments.
 <h2> 7/19 </h2>
 * Documented peelerNode and peeler_client<br>
 * Created sealerNode based on peelerNode
+
+<h2> 7/20 </h2>
+* Explored using services<br>
+* Made description node into a service
+
+<h2> 7/20 </h2>
+* Worked through errors with running code on ROS<br>
+* Worked on creating camera node<br>
+* Modified Peeler node based on changes made (made action and description services instead of topics)

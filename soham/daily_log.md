@@ -26,3 +26,7 @@
 ## **Week of 7/18 - 7/22**
 
  Tuesday (7/19): Made personal website, but I don't have a domain to upload it to, so it's sitting in a repo. Have some ideas on how to fix my issues with the AI code.
+ Friday (7/22): Worked on debugging the AI code, created new repo on github for it. Continuing to debug. 
+
+ ### **Week of 7/25 - 7/29**
+ Monday (7/25): Fixed issue with TensorFlow, working through the remainder of the code. Still not performing as expected.  s s

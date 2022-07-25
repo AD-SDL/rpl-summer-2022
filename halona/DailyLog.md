@@ -6,11 +6,11 @@
 **Vision**
 Our main goal is finding the presence and location of key objects in the image, to measure if the robot has picked up or moved the correct hardware in the scene. The network should be able to identify different key items depending on the training data, yet be robust to visual interference caused by other objects in the scene and backgrounds and lighting conditions. Our secondary goal is training a network to analyze a material such as liquid in a beaker, the contents of a pipette, or textured objects like a used petri dish. This network should be able to classify the object into predefined categories to inform the robot of the current experimental progress. This network will also need to be robust to visual interference from the scene.
 **PyHamilton**
-The goal is to reproduce one of the biological experiments presented in the PyHamilton paper using the Python interface that has been developed for the Hudson SOLO liquid handler and Hudson SoftLinx integration system. We aim to prove that our completely open-source Python API is capable of executing the same biological experiments as Pyhamilton with similar results. Students on this project will also contribute to the growing library of biological protocols written for our Hudson robotic experimentation platform. *Any task that mentions PyHamilton is done in collaboration with Arleen Hidalgo and Gillian Camacho.*
+The goal is to reproduce one of the biological experiments presented in the PyHamilton paper using the Python interface that has been developed for the Hudson SOLO liquid handler and Hudson SoftLinx integration system. We aim to prove that our completely open-source Python API is capable of executing the same biological experiments as Pyhamilton with similar results. Students on this project will also contribute to the growing library of biological protocols written for our Hudson robotic experimentation platform. <u>*Any task that mentions PyHamilton is done in collaboration with Arleen Hidalgo and Gillian Camacho.*<u>
 ## 6/24
 * I made a folder on the repo
 * I went through a tutorial on Pytorch
-
+* This is a change for pull request
 
 https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-a1fe-e694d0bfb19b.mp4
 
@@ -136,7 +136,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 
 
 
-### 7/20
+## 7/20
 ### To Do:
 * Finish poster
 * Work on getting more data (training on new dataset) for data
@@ -144,7 +144,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Finished poster
 * Trained on OT_2
 
-### 7/21
+## 7/21
 ### To Do:
 * Finish and submit poster
 * Meet Saaya to talk about automating making yaml file and training using YOLO
@@ -153,6 +153,19 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Met Saaya and went over automating yaml file (approach)
 * Met Arvind with Rory and Saaya to talk about YOLO
 
+## 7/22
+### To Do:
+* Work on student meeting presentation
+### Tasks Accomplished:
+* Worked and presented student meeting presentation
+
+## 7/25
+### To Do:
+* Work on documentation of PyHamilton code
+* Work on Priyanka's papers
+* Work on automating yaml file
+### Tasks Accomplished:
+* Worked on two papers for Priyanka
 
 
 
