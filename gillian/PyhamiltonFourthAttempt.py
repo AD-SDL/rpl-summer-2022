@@ -1394,7 +1394,9 @@ for i in reversed(range(1,6)):
 soloSoft.savePipeline() 
 
 #TIPS: uses 5 column of tips
-
+'''
+This code makes a transfer of 20 uL (transfer_volume) to and from columns 12,11,10,9,8,7 respectively.
+'''
 #######Starting a new SoloSoft for nitrogen on the second half of the assay plate######
 soloSoft = SoloSoft(
     filename = "dilution_assay_N_2.hso",
