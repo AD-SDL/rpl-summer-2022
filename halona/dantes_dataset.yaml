@@ -1,0 +1,6 @@
+train: /UnityPerceptionData/both/RGB9f558fb9-762b-4099-a554-d17bcdd87206
+val: /UnityPerceptionData/both
+test: 
+
+nc:2
+names: ['ball','box']
