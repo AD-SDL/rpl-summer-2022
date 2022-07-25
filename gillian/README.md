@@ -125,3 +125,10 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I updated my resume
 
 ### 7/22
+* I met with Arleen and Halona to prepare our presentations for the weekly update meeting
+* I attended the RPL weekly update meeting and presented my progress with Arleen
+* I went to journal club to discuss poster presentations
+
+### 7/25
+* I wrote out protocols for 2 more papers for Priyanka's project
+* 
