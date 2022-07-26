@@ -173,6 +173,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Work on automating files with Saaya
 * Work on researching ways to improve precision of data
 * Meet Casey with Gillian and Arleen at Bio
+* Start working on paper
 ### Tasks Accomplished:
 
 
