@@ -131,4 +131,5 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 
 ### 7/25
 * I wrote out protocols for 2 more papers for Priyanka's project
-* 
+* I met with Arleen to compile a list of reagents needed in our experiment
+* We continued documenting our code
