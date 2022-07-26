@@ -1237,7 +1237,7 @@ movements as well as the execution of the hso files
 
 softLinx = SoftLinx("Fourth_attempt", "C:\\Users\\svcaibio\\Dev\\Summer_stduents\\rpl-summer-2022\\gillian\\Fourth_attempt.slvp") # display name, path to saves
 
-softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96.Corning.3635.ClearUVAssay", "SoftLinx.PlateCrane.Stack4":"TipBox.50uL.Axygen-EV-50-R-S.tealbox"})
+softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96.Corning-3635.ClearUVAssay", "SoftLinx.PlateCrane.Stack4":"TipBox.50uL.Axygen-EV-50-R-S.tealbox"})
 #this is where you would softlinx run solo stuff, preparing diltuion stock (fill stuff in)###############
 
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
@@ -1260,6 +1260,7 @@ for c in list_of_dilution:
 
 
 for i in range(1,4):
+    softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack5"],["SoftLinx.Solo.Position4"],poolID = 5)
     softLinx.plateCraneRemoveLid(["SoftLinx.Solo.Position4"],["SoftLinx.PlateCrane.LidNest2"])
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
@@ -1280,14 +1281,15 @@ for i in range(1,4):
     for c in list_of_final_2:
         softLinx.soloSoftRun(Path+c)
 
-    softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
 
     softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position4"],["SoftLinx.Hidex.Nest"])
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
     softLinx.hidexRun("pyhamilton")
     softLinx.plateCraneMovePlate(["SoftLinx.Hidex.Nest"],["SoftLinx.Liconic.Nest"])
+    softLinx.hidexClose()
     softLinx.plateCraneReplaceLid(["SoftLinx.PlateCrane.LidNest2"],["SoftLinx.Liconic.Nest"])
     softLinx.liconicLoadIncubator(loadID=i)
+
 softLinx.saveProtocol()
 
 #at this point the layout has been reset so a new plate can be made be repeating the same thing#
