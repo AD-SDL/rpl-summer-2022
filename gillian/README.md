@@ -110,3 +110,25 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I sent my poster draft to Carla for feedback
 * I finished a draft of my 150-word abstract and kept thinking of title ideas
 * I set up the next test of our code with Casey at 12:30
+* We all tested the protocol including three replicate assay plates. There were minor issues with plate definitions and the software slowing down, but it was relatively successful and almost ready to test with the real materials
+
+### 7/20
+* I attended a resume workshop and updated my resume to include this internship. I still have changes to make to the format and things to add to make it more representative of my experience level but it is improving
+* I finished a second draft of my poster and resent it to Arvind for feedback
+* I went through the code and made more detailed comments that describe the procedure as it is supposed to happen
+* I sent my poster to Casey for feedback
+
+### 7/21
+* I edited my poster with Casey and Arvind's recommendations in mind and finished a new draft of it
+* I wrote a protocol for another paper for Priyanka and the XDL project
+* I submitted my final poster draft
+* I updated my resume
+
+### 7/22
+* I met with Arleen and Halona to prepare our presentations for the weekly update meeting
+* I attended the RPL weekly update meeting and presented my progress with Arleen
+* I went to journal club to discuss poster presentations
+
+### 7/25
+* I wrote out protocols for 2 more papers for Priyanka's project
+* 

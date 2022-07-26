@@ -61,7 +61,7 @@ Creating a fully autonomous lab with robots used for biology experiments.
 * Worked on ROS tutorials
 
 <h2> 7/13 </h2>
-* Set up a ROS talker and listener
+* Set up a ROS talker and listener<br>
 * Found out that a secure network is needed or else talker is sending information to entire Argonne Auth network
 
 <h2> 7/14 </h2>
@@ -69,13 +69,26 @@ Creating a fully autonomous lab with robots used for biology experiments.
 * Updated readme to include example outputs for the commands
 
 <h2> 7/15 </h2>
-* Worked with Eric to create ROS wrapper for sealer/peeler
-* A ROS wrapper is used to integrate ROS files with non ROS files
+* Worked with Eric to create ROS wrapper for sealer/peeler<br>
+* A ROS wrapper is used to integrate ROS files with non ROS files<br>
 * Created packages, nodes, and contained drivers
 
 <h2> 7/18 </h2>
-* Went through steps to be able to send commands to Peeler on MJ
-* Documented setup steps for this in readme
-* Made nodes able to send commands to peeler and sealer
-* Modified peeler client to store all output in variable that can be called by the nodes
+* Went through steps to be able to send commands to Peeler on MJ<br>
+* Documented setup steps for this in readme<br>
+* Made nodes able to send commands to peeler and sealer<br>
+* Modified peeler client to store all output in variable that can be called by the nodes<br>
 * Implemented if statements with switch case
+
+<h2> 7/19 </h2>
+* Documented peelerNode and peeler_client<br>
+* Created sealerNode based on peelerNode
+
+<h2> 7/20 </h2>
+* Explored using services<br>
+* Made description node into a service
+
+<h2> 7/20 </h2>
+* Worked through errors with running code on ROS<br>
+* Worked on creating camera node<br>
+* Modified Peeler node based on changes made (made action and description services instead of topics)
