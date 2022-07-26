@@ -272,6 +272,17 @@ a
 0
 0
 !@#$
+ShuckTip
+TipDisposal
+!@#$
+GetTip
+Position3
+TipDisposal
+8
+1
+0
+False
+!@#$
 Aspirate
 Position6
 0

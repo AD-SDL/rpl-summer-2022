@@ -29,4 +29,4 @@
  Friday (7/22): Worked on debugging the AI code, created new repo on github for it. Continuing to debug. 
 
  ### **Week of 7/25 - 7/29**
- Monday (7/25): Fixed issue with TensorFlow, working through the remainder of the code. Still not performing as expected.  s s
+ Monday (7/25): Fixed rendering issue, developing learning mechanism with tensorflow

@@ -1,5 +1,6 @@
 #########################Fourth Assembly with pipette volume edits and hso file splitting edits########################################
 
+from re import S
 from liquidhandling import SoloSoft, SoftLinx
 
 #can we get rid of this one below I don't know what purpose it's serving#
@@ -588,13 +589,17 @@ soloSoft.savePipeline()
 #TIPS: uses 2 tips (3 columns and 5 of fourth column used at this point)
 
 #Carbon
+
 soloSoft = SoloSoft(
     filename = "dilution_C_treatment_1.hso",
     plateList = plate_list,
     )
 
 soloSoft.getTip(position=tips, num_tips=1)
-
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 5 and 6 (i) from column 1. The tip aspirates from
+and dispenses into rows B, D, F, H. 
+'''
 #prepping C4 cells (1.25X)#
 for row in rows[1::2]:
     for i in range(5,7):
@@ -618,6 +623,12 @@ for row in rows[1::2]:
             )
 
 #prepping C3 cells (2.5X)
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 5 and 6 (i) from column 1. The tip aspirates from
+and dispenses into rows A, C, E, G. 
+
+This is repeated 2 times via the j for loop to transfer a total volume of 300 uL to each of these wells
+'''
 for j in range(1,3):
     for row in rows[::2]:
         for i in range(5,7):
@@ -653,7 +664,12 @@ soloSoft = SoloSoft(
     )
 
 soloSoft.getTip(position=tips, num_tips=1)
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 3 and 4 (i) from column 1 and 2 respectively. The tip aspirates from
+and dispenses into rows B, D, F, H. 
 
+This is repeated 4 times via the j for loop to transfer a total volume of 600 uL to each of these wells
+'''
 for j in range(1,5):
     for row in rows[1::2]:
         for i in range(3,5):
@@ -689,7 +705,12 @@ soloSoft = SoloSoft(
     )
 
 soloSoft.getTip(position=tips, num_tips=1)
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 3 and 4 (i) from column 1 and 2 respectively. The tip aspirates from
+and dispenses into rows A, C, E, G. 
 
+This is repeated 4 times via the j for loop to transfer a total volume of 600 uL to each of these wells
+'''
 #prepping C1 cells (10X)
 for j in range(1,5):
     for row in rows[::2]:
@@ -718,7 +739,12 @@ soloSoft.shuckTip()
 soloSoft.savePipeline()
 
 #TIPS: 4 whole columns used at this point#
+'''
+This code makes a transfer of 150 uL (transfer_volume) to columns 3 and 4 (i) from column 1 and 2 respectively. The tip aspirates from
+B, D, F, and H and dispenses into rows A, C, E, G respectively. 
 
+This is repeated 4 times via the j for loop to transfer a total volume of 600 uL to each of these wells
+'''
 soloSoft = SoloSoft(
     filename = "dilution_C_treatment_4.hso",
     plateList = plate_list,
@@ -769,6 +795,9 @@ transfer_volume = 150
 soloSoft.getTip(tips) 
 #### N5#####
 # #75 uL#
+'''
+This code makes a transfer of 75 uL (transfer_volume) to column 11 from column 5.  
+'''
 soloSoft.aspirate(
     position = stock_treatments,
     aspirate_volumes = Plate_96_Corning_3635_ClearUVAssay().setColumn(5, transfer_volume*0.5),
@@ -789,6 +818,9 @@ soloSoft.dispense(
     )
 
 ### N4###
+'''
+This code makes a transfer of 150 uL (transfer_volume) to column 10 from column 5.  
+'''
 #150 uL#
 soloSoft.aspirate(
     position = stock_treatments,
@@ -810,6 +842,11 @@ soloSoft.dispense(
     )
 
 ###N3####
+'''
+This code makes a transfer of 150 uL (transfer_volume) to column 9 from column 5.
+
+This is repeated 2 times via the j for loop to transfer a total volume of 300 uL to each of these wells
+'''
 for j in range(1,3):
     soloSoft.aspirate(
         position = stock_treatments,
@@ -836,6 +873,11 @@ soloSoft.savePipeline()
 #TIPS: uses 1 column (5 colums used at this point and one of another)
 
 ###N2####
+'''
+This code makes a transfer of 150 uL (transfer_volume) to column 8 from column 6.
+
+This is repeated 4 times via the j for loop to transfer a total volume of 600 uL to each of these wells
+'''
 soloSoft = SoloSoft(
     filename = "dilution_N_treatment_2.hso",
     plateList = plate_list,
@@ -870,13 +912,18 @@ soloSoft.savePipeline()
 #TIPS: uses 1 column (6 colums used at this point and one of another)
 
 ######N1#######
+
 soloSoft = SoloSoft(
     filename = "dilution_N_treatment_3.hso",
     plateList = plate_list,
     ) 
 
 soloSoft.getTip(tips)
+'''
+This code makes a transfer of 150 uL (transfer_volume) to column 7 from column 7 four times and column 8 the other four times.
 
+This is repeated 8 times via the j for loop to transfer a total volume of 1200 uL to each of these wells
+'''
 for j in range(1,9):
     transfer_volume = 150
     soloSoft.aspirate(
@@ -921,7 +968,11 @@ soloSoft = SoloSoft(
 
 #M9#
 soloSoft.getTip(tips)
+'''
+This code makes a transfer of 180 uL (transfer_volume) to column 12 from column 7.
 
+This is repeated 5 times via the j for loop to transfer a total volume of 900 uL to each of these wells
+'''
 for i in range(1,6):
     soloSoft.aspirate(
         position = stock_M9,
@@ -944,7 +995,9 @@ soloSoft.shuckTip()
 
 #C#
 c_control_volume = 120
-
+'''
+This code makes a transfer of 120 uL (transfer_volume) to column 12 from column 4.
+'''
 soloSoft.getTip(tips)
 
 soloSoft.aspirate(
@@ -971,7 +1024,9 @@ soloSoft.shuckTip()
 
 #P#
 p_control_volume = 120
-
+'''
+This code makes a transfer of 120 uL (transfer_volume) to column 12 from column 12.
+'''
 soloSoft.getTip(tips)
 
 soloSoft.aspirate(
@@ -998,7 +1053,9 @@ soloSoft.shuckTip()
 
 #N#
 n_control_volume = 60
-
+'''
+This code makes a transfer of 60 uL (transfer_volume) to column 12 from column 5.
+'''
 soloSoft.getTip(tips)
 
 soloSoft.aspirate(
@@ -1032,7 +1089,9 @@ Uses 8 tips (1 column) for colums 1 through 5 of the assay plate and another col
 '''
 #start with its own new tip box so that adding adding additional plates can be done easily without extra math to see how many tips are used#
 
-
+'''
+This code makes a transfer of 80 uL (transfer_volume) of cells from and to columns 1-5 respectively .
+'''
 soloSoft = SoloSoft(
     filename = "cells_assay_1.hso",
     plateList = plate_list,
@@ -1071,7 +1130,9 @@ soloSoft = SoloSoft(
     ) 
 
 soloSoft.getTip(tips)
-
+'''
+This code makes a transfer of 80 uL (transfer_volume) of cells from and to columns 7-12 respectively
+'''
 for i in range(7,12):   
     soloSoft.aspirate(
         position = cells,
@@ -1149,9 +1210,13 @@ soloSoft = SoloSoft(
     ) 
 
 transfer_volume = 20
+'''
+This code makes a transfer of 20 uL (transfer_volume) to columns 1-5 from column 1.
 
+This is repeated 2 times via the j for loop to transfer a total volume of 40 uL to each of these wells
+'''
 #for i in range(1,6):
-for i in range(1,3):
+for j in range(1,3):
     soloSoft.getTip(tips)
     soloSoft.aspirate(
         position = dilution,
@@ -1175,8 +1240,12 @@ for i in range(1,3):
             syringe_speed = syringeSpeed,
             )
     soloSoft.shuckTip()
+'''
+This code makes a transfer of 20 uL (transfer_volume) to columns 7-12 from column 2.
 
-for i in range(1,3):
+This is repeated 2 times via the j for loop to transfer a total volume of 40 uL to each of these wells
+'''
+for j in range(1,3):
     soloSoft.getTip(tips)
     soloSoft.aspirate(
         position = dilution,
@@ -1213,8 +1282,12 @@ soloSoft = SoloSoft(
     ) 
 
 transfer_volume = 20 
+'''
+This code makes a transfer of 20 uL (transfer_volume) to columns 5,4,3,2,1 (in this order) from column 3.
 
-for i in range(1,3):
+This is repeated 2 times via the j for loop to transfer a total volume of 40 uL to each of these wells
+'''
+for j in range(1,3):
     soloSoft.getTip(tips)
     soloSoft.aspirate(
         position = dilution,
@@ -1250,6 +1323,11 @@ soloSoft = SoloSoft(
     ) 
 
 transfer_volume = 20 
+'''
+This code makes a transfer of 20 uL (transfer_volume) to columns 12,11,10,9,8,7 from column 5.
+
+This is repeated 2 times via the j for loop to transfer a total volume of 40 uL to each of these wells
+'''
 
 for i in range(1,3):
     soloSoft.getTip(tips)
@@ -1317,7 +1395,9 @@ for i in reversed(range(1,6)):
 soloSoft.savePipeline() 
 
 #TIPS: uses 5 column of tips
-
+'''
+This code makes a transfer of 20 uL (transfer_volume) to and from columns 12,11,10,9,8,7 respectively.
+'''
 #######Starting a new SoloSoft for nitrogen on the second half of the assay plate######
 soloSoft = SoloSoft(
     filename = "dilution_assay_N_2.hso",
@@ -1366,7 +1446,7 @@ softLinx.setPlates({"SoftLinx.PlateCrane.Stack5": "Plate.96.Corning-3635.ClearUV
 
 softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
 
-softLinx.plateCraneMoveCrane("SoftLine.PlateCrane.Safe")
+softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
 
 
 list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9_1.hso", 
@@ -1379,17 +1459,17 @@ list_of_dilution = ["dilution_P_M9_1.hso", "dilution_P_M9_1.hso", "dilution_C_M9
                     "dilution_N_treatment_3.hso", "dilution_control.hso"]
 
 for c in list_of_dilution:
-    softLinx.soloSoftRun(Path+c)
+     softLinx.soloSoftRun(Path+c)
 
 ''' In order to prepare plates in triplicate, we use a for loop to run the code 3 times
 Note: Only the code that prepares the assay plate and the plate crane movements that are responsible 
 for moving the plate to Hidex and the incubator are in this loop'''
 
 for i in range(1,4):
+    softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack5"],["SoftLinx.Solo.Position4"],poolID = 5)
     softLinx.plateCraneRemoveLid(["SoftLinx.Solo.Position4"],["SoftLinx.PlateCrane.LidNest2"])
 
-    softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position3"],["SoftLinx.PlateCrane.Stack2"],poolID = 2)
     softLinx.plateCraneMovePlate(["SoftLinx.PlateCrane.Stack4"],["SoftLinx.Solo.Position3"],poolID = 4)
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
 
@@ -1419,7 +1499,7 @@ for i in range(1,4):
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
 
     for c in list_of_final_2:
-        softLinx.soloSoftRun(Path+c)
+       softLinx.soloSoftRun(Path+c)
 
     softLinx.plateCraneMovePlate(["SoftLinx.Solo.Position4"],["SoftLinx.Hidex.Nest"])
     softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
@@ -1427,7 +1507,34 @@ for i in range(1,4):
     softLinx.plateCraneMovePlate(["SoftLinx.Hidex.Nest"],["SoftLinx.Liconic.Nest"])
     softLinx.hidexClose()
     softLinx.plateCraneReplaceLid(["SoftLinx.PlateCrane.LidNest2"],["SoftLinx.Liconic.Nest"])
+    softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
     softLinx.liconicLoadIncubator(loadID=i)
+    softLinx.liconicBeginShake(shaker1Speed=30)
+    
+# Creation loop ends
+
+softLinx.liconicShake(shaker1Speed=30, shakeTime=[0,11,30,0])
+#softLinx.liconicShake(shaker1Speed=30, shakeTime=[0,0,0,10])#shaking in the incubator
+softLinx.hidexRun("SetTempWait37")
+ #reading loop
+for plateId in range(1,4):
+    softLinx.liconicUnloadIncubator(loadID=plateId)
+    softLinx.plateCraneRemoveLid(["SoftLinx.Liconic.Nest"],["SoftLinx.PlateCrane.LidNest2"])
+    softLinx.plateCraneMovePlate(["SoftLinx.Liconic.Nest"],["SoftLinx.Hidex.Nest"])
+    softLinx.hidexClose()
+    softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
+    softLinx.hidexRun("pyhamilton")
+    softLinx.plateCraneMovePlate(["SoftLinx.Hidex.Nest"],["SoftLinx.PlateCrane.Stack1"])
+    softLinx.hidexClose()
+    softLinx.plateCraneReplaceLid(["SoftLinx.PlateCrane.LidNest2"],["SoftLinx.PlateCrane.Stack1"])
+    softLinx.plateCraneMoveCrane("SoftLinx.PlateCrane.Safe")
+    if not plateId == 3:
+        softLinx.liconicShake(shaker1Speed = 30, shakeTime=[0,0,20,0])
+        #softLinx.liconicShake(shaker1Speed = 30, shakeTime=[0,0,0,5])
+
+softLinx.hidexRun("SetTemp20")
+softLinx.liconicEndShake()
+
 softLinx.saveProtocol()
 
 #at this point the layout has been reset so a new plate can be made be repeating the same thing#
