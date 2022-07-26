@@ -166,6 +166,13 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Work on automating yaml file
 ### Tasks Accomplished:
 * Worked on two papers for Priyanka
-
+* Worked on detecting pipettes in a video
+## 7/26
+### To Do:
+* Read papers for Fellowship
+* Work on automating files with Saaya
+* Work on researching ways to improve precision of data
+* Meet Casey with Gillian and Arleen at Bio
+### Tasks Accomplished:
 
 
