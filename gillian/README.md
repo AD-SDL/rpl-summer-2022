@@ -133,3 +133,8 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I wrote out protocols for 2 more papers for Priyanka's project
 * I met with Arleen to compile a list of reagents needed in our experiment
 * We continued documenting our code
+
+### 7/26
+* I finished additional updates to my resume and linkedin
+* I met with Arleen, Halona, and Casey to test the plate crane movements and time the shaking step so that a second OD reading can be taken after 12 hours
+* I met with Arleen to create a README for the protocol
