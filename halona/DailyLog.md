@@ -175,5 +175,15 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Meet Casey with Gillian and Arleen at Bio
 * Start working on paper
 ### Tasks Accomplished:
+* Read papers for Fellowship
+* Completed creating a script that automates making yaml files
+* Met Casey with Gillian and Arleen in Bio and checked plane crane movements for PyHamilton
+## 7/27
+### To Do:
+* Work on poster presentation script
+* Work on finding ways to improve the hyperparameters 
+* Meet Casey with Gillian and Arleen and run a complete trial of our code
+* Start working on paper
+### Tasks Accomplished:
 
 
