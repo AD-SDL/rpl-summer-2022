@@ -185,5 +185,20 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Meet Casey with Gillian and Arleen and run a complete trial of our code
 * Start working on paper
 ### Tasks Accomplished:
+* Worked on poster presentation script
+* Worked on research report
+* Ran a complete trial on Hudson with Camacho and Hidalgo
+## 7/28
+### To Do:
+* Work on paper
+* Work on poster presentation script
+* Work on visualizations of Pyhamilton data with Camacho and Hidalgo
+### Tasks Accomplished:
+* Worked on research report
+* Worked on poster presentation script
+* Created plots to visualize data with Camacho and Hidalgo
 
 
+![Results_pyhamilton1](https://user-images.githubusercontent.com/72309881/181627808-028df3a3-4856-4876-9473-0cb9eb9241ec.png)
+![Results_pyhamilton2](https://user-images.githubusercontent.com/72309881/181627824-f9628bb8-b99e-4820-879f-1029![Results_pyhamilton3](https://user-images.githubusercontent.com/72309881/181627839-6f94cde9-be62-4179-857d-145a0e171801.png)
+6c0e8287.png)
