@@ -188,6 +188,7 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Worked on poster presentation script
 * Worked on research report
 * Ran a complete trial on Hudson with Camacho and Hidalgo
+* Worked on detecting pipettes in a video of the OT-2
 ## 7/28
 ### To Do:
 * Work on paper
