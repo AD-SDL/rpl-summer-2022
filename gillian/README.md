@@ -138,3 +138,13 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * I finished additional updates to my resume and linkedin
 * I met with Arleen, Halona, and Casey to test the plate crane movements and time the shaking step so that a second OD reading can be taken after 12 hours
 * I met with Arleen to create a README for the protocol
+
+### 7/27
+* I added to the README for the protocol
+* We ran the protocol in bio on live cells starting at 12:30 and ending at 5:00
+
+### 7/28
+* We looked at the data we got from the OD readings and made graphs of our results
+* We interpreted the results and found that they do align with what we expected based on the paper, mostly that a deficiency of phosphorus could be rescued by a surplus of carbon but not nitrogen
+* I started writing my paper and made an outline of what I want to include in each section
+* I started writing a script for the audio recording of my poster presentation I have to do
