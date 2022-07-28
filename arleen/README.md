@@ -91,4 +91,18 @@ For this project, we will reproduce one of the biological experiments presented 
 
 ### 7/22/22 
 * Did our presentation for the meeting of the RPL updates and then attended the meeting 
-* 
+* Attended a meeting about how to do posters and how to present them 
+
+### 7/25/22
+* Worked on writing down the steps for some of Priyanka's papers 
+* Started to write the script for the audio recording of my poster presentation 
+* Started the outline for my paper 
+
+### 7/26/22
+* Went to Building 446 and finalized the loop for the incubation of the plates and figured out what needs to go into the Hidex protocol. 
+* Started to write the whole protocol down (Documentation) 
+
+### 7/27/22
+* Went to building 446 and completed a run of the whole protocol in triplicate with cells and nutrients. Preparing the materials (Plate with cells, plate with stock nutrients and plate with media) and running the protocol, took aproximately 4 hoours and a half. 
+
+### 7/28/22
