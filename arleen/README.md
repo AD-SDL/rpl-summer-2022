@@ -106,3 +106,5 @@ For this project, we will reproduce one of the biological experiments presented 
 * Went to building 446 and completed a run of the whole protocol in triplicate with cells and nutrients. Preparing the materials (Plate with cells, plate with stock nutrients and plate with media) and running the protocol, took aproximately 4 hoours and a half. 
 
 ### 7/28/22
+* We got the results after the incubation period for the assay plates was complete. 
+* We graphed and analyzed the results 
