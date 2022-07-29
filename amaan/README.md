@@ -101,8 +101,49 @@ In the secure biosystems lab, there are many robots that are in play. It is very
 * 2pm Journal Club
 * Worked on the code from yesterday
 * **TODO:**
-  - [ ] Fork repo, and move all contents in `rpl-camera-vision/rpl_cv/dashbord/` folder to `rpl-camera-vision/rpl_dashboard`
-  - [ ] Add a README inside `rpl_dashboard` folder explaining how to run project, dependencies, how to install everything, how to run the app, etc.
-  - [ ] Create a pull request with the changes in the forked repo to merge changes to main repo
-  - [ ] Finish socket server code for the 2-way communication w/ the button
+  - [x] Fork repo, and move all contents in `rpl-camera-vision/rpl_cv/dashbord/` folder to `rpl-camera-vision/rpl_dashboard`
+  - [x] Add a README inside `rpl_dashboard` folder explaining how to run project, dependencies, how to install everything, how to run the app, etc.
+  - [x] Create a pull request with the changes in the forked repo to merge changes to main repo
+  - [x] Finish socket server code for the 2-way communication w/ the button
 
+### Monday, 7.18.22
+* In Carla's weekly meeting, I presented on my progress so far by giving a PowerPoint presentation and explaining my research.
+* Worked on the two-way communication code
+
+### Tuesday, 7.19.22
+* Began working on poster
+* Worked on two-way communication code, ran into some bugs
+
+### Wednesday, 7.20.22
+* Finished 1st draft of poster. Sent it to Rory to check over. He sent back feedback and I made those changes
+* Met with Rory to discuss an issue I had with my socket server connection for the two-way communication. Realized I might need multiple threads, so we discussed and realized and found a new solution without using multiple threads, which is good because we wanted to avoid using multiple threads/processes since that will make things more complicated
+* Finished draft 2 of my poster and gave it to Carla for her to edit and then I made the changes she mentioned
+
+### Thursday, 7.21.22
+* Made some new changes to my poster, made it look better with more color, changed the design.
+* Sent new draft to Carla
+* Submitted poster
+* Ice-cream social with RPL lab :)
+
+### Friday, 7.22.22
+* Had 11am weekly meeting with RPL
+* During journal club, Carla and Rory gave a presentation on how the poster presentation will go. They gave tips as well.
+
+### Monday, 7.25.22
+* Worked on solving the SIGPIPE bug that I had with the two-way communication
+* Met with Rory and he helped explain what pipes are and what a SIGPIPE error means. We then went through my code together and he gave me pointers to what the issue may be
+
+### Tuesday, 7.26.22
+* Fixed the SIGPIPE error, two-way communication is now working. The solution was that I had to swap the client & server. The dashboard was initially the server and the client was initially the NUC, but I had to switch them so that the dashboard was the client and the NUC was the server.
+* Wrote the subscriber for the dash messages as well. Tested it out and now the user can send messages to the NUC, in which the ROS publisher receives it from a socket server and then publishes it to a ROS topic, and then a subscriber reads it and prints it to the console.
+
+### Wednesday, 7.27.22
+* Cleaned up the code, added documentation, moved the code from `rpl-camera-vision/rpl_cv/dashboard/*` to `rpl-camera-vision/rpl_dashboard/*`, and then I made a pull request. Changes are now merged with the main branch
+* Attended a workshop on how to write my paper with Dr. Boomsma. Began creating an outline for my paper
+
+### Thursday, 7.28.22
+* Worked on creating my outline for my paper
+
+### Friday, 7.29.22
+* Worked on my paper
+* Had 11am weekly meeting
