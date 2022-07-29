@@ -92,3 +92,18 @@ Creating a fully autonomous lab with robots used for biology experiments.
 * Worked through errors with running code on ROS<br>
 * Worked on creating camera node<br>
 * Modified Peeler node based on changes made (made action and description services instead of topics)
+
+<h2> 7/25 </h2>
+* Finished peeler/sealer drivers
+
+<h2> 7/26 </h2>
+* Began working on peeler client/figured out how Raf was sending commands
+
+<h2> 7/27 </h2>
+* Looked at hudson reference
+* Populated client with commands
+
+<h2> 7/28 </h2>
+* Added interpreting feedback to client
+* Added new commands
+* Have a better idea of how moving to specific location works
