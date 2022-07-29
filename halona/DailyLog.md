@@ -205,4 +205,12 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 ![Results_pyhamilton2](https://user-images.githubusercontent.com/72309881/181627824-f9628bb8-b99e-4820-879f-10296c0e8287.png)
   
 ![Results_pyhamilton3](https://user-images.githubusercontent.com/72309881/181627839-6f94cde9-be62-4179-857d-145a0e171801.png)
+  
+## 7/29
+### To Do:
+* Work on paper
+* Work on poster presentation script
+* Work on combining datasets to train 
+### Tasks Accomplished:
+  
 
