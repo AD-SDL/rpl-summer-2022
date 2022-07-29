@@ -100,10 +100,10 @@ Creating a fully autonomous lab with robots used for biology experiments.
 * Began working on peeler client/figured out how Raf was sending commands
 
 <h2> 7/27 </h2>
-* Looked at hudson reference
+* Looked at hudson reference<br>
 * Populated client with commands
 
 <h2> 7/28 </h2>
-* Added interpreting feedback to client
-* Added new commands
+* Added interpreting feedback to client <br>
+* Added new commands <br>
 * Have a better idea of how moving to specific location works
