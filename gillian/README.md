@@ -148,3 +148,25 @@ Link to paper: https://pubmed.ncbi.nlm.nih.gov/33764680/
 * We interpreted the results and found that they do align with what we expected based on the paper, mostly that a deficiency of phosphorus could be rescued by a surplus of carbon but not nitrogen
 * I started writing my paper and made an outline of what I want to include in each section
 * I started writing a script for the audio recording of my poster presentation I have to do
+
+### 7/29
+* I recorded my audio presentation for my poster session recording
+* I started writing my paper
+* I attended journal club and heard about what grad school is like
+
+### 8/01
+* I wrote a first draft of my paper
+* I met with Arvind to talk about grad school and my future plans
+
+### 8/02
+* I sent a draft of my paper to Bob to review and then I made edits based on his notes
+* I attended an MCS seminar
+
+### 8/03
+* I continued editing my paper
+* I attended Learning off the Lawn
+* I met with a communications writer to interview about the RPL
+
+### 8/04
+* I presented for Learning on the Lawn
+* I finished a new draft of my paper 
