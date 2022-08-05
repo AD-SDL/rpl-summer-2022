@@ -212,5 +212,30 @@ https://user-images.githubusercontent.com/72309881/175628210-b9f65c51-b90b-44b9-
 * Work on poster presentation script
 * Work on combining datasets to train 
 ### Tasks Accomplished:
+* Worked on paper
+* Worked on poster presentation
+## 8/1
+### To Do:
+* Worked on completing deliverables
+* Combininig datasets and training again
+### Tasks Accomplished:
+* Half-way done with paper
+* Combined datasets
+## 8/2 
+### To Do:
+* Work on completing deliverables
+### Tasks Accomplished:
+* 3/4th way done with the paper
+## 8/3
+### To Do:
+* Attend learning off the lawn
+### Tasks Accomplished:
+* Attended Learning off the lawn
+* Completed Peer Review
+## 8/4
+### To Do:
+* Present at Learning on the Lawn
+* Completed all deliverables, yeah!
   
+
 
