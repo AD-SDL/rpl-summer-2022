@@ -108,4 +108,27 @@ For this project, we will reproduce one of the biological experiments presented 
 ### 7/28/22
 * We got the results after the incubation period for the assay plates was complete. 
 * We graphed and analyzed the results 
-* Continued to worked with my paper and poster audio presentation
+* Continued to worked with my paper and poster audio presentation 
+* Recorded my audio presentation for my poster
+
+### 7/29/2022
+* I started working on my pare and attended journal club. 
+
+### 8/01/2022
+* I wrote a draft for my research report 
+* Met with Arvind to talk about my future plans nd get advise from him 
+
+### 8/02/2022 
+* Worked on my paper 
+* Sent Bob my first draft of the paper
+
+### 8/03/2022
+* Sent Casey my paper for feedback 
+* Worked on my paper 
+* Attended Learning Off the Lawn
+### 8/04/2022 
+* I attended Learning On the Lawn
+* Presented my poster 
+* Continued to work on my deliverables 
+
+### 8/05/2022
