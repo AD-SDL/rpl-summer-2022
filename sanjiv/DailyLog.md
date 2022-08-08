@@ -113,4 +113,4 @@ Creating a fully autonomous lab with robots used for biology experiments.
 * Next steps:
 * Map out plate locations
 * Image data
-* 
+* Create version of listpoints data in python list (example)
