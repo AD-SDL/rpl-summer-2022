@@ -107,3 +107,10 @@ Creating a fully autonomous lab with robots used for biology experiments.
 * Added interpreting feedback to client <br>
 * Added new commands <br>
 * Have a better idea of how moving to specific location works
+
+<h2> 8/8 </h2>
+* Got JOG, move, loadpoint, deletepoint, Limp to work.
+* Next steps:
+* Map out plate locations
+* Image data
+* 
