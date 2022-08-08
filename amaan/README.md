@@ -147,3 +147,9 @@ In the secure biosystems lab, there are many robots that are in play. It is very
 ### Friday, 7.29.22
 * Worked on my paper
 * Had 11am weekly meeting
+
+### Monday, 8.1.22 - Friday, 8.5.22
+* On Monday I practiced my poster presentation during Carla's presentation where she gave us feedback.
+* Worked on deliverables such as final paper, peer review, and abstracts. 
+* Practiced for Learning on the Lawn presentation and gave learning on the lawn poster presentation on Thursday
+* On Friday I submitted all my deliverables, had last 11am weekly Friday meeting at RPL, did photoshoot for the photographer for RPL, journal club, and then had an ice cream social at 3pm with the Ramanathan Lab and RPL lab. 
